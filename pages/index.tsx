@@ -11,7 +11,7 @@ export default function Home() {
       <main
         className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
       >
-        <Video src="/video-output-2AC520AF-5EFD-4D28-AF00-C9FC63E4E535.mp4" />
+        <Video src="/fg-vid-1.mp4" />
       </main>
     </Layout>
   );
