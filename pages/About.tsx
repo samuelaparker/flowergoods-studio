@@ -4,8 +4,8 @@ import Layout from "@/components/shared/Layout";
 const About: React.FC = () => {
   return (
     <Layout bgColor="brand-pink" pageTitle="About">
-      <div className="max-w-2xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">about</h1>
+      <div className="max-w-5xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <h1 className="text-7xl text-gray-800 mb-4 font-black">about</h1>
         <p className="text-gray-700 leading-loose">
           Hey there, welcome to flowergoods.studio! flowergoods.studio is run by
           Trish Ramirez-Parker. We&apos;re all about bringing a touch of beauty
