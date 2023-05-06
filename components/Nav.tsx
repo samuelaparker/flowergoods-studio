@@ -16,7 +16,7 @@ const SidebarNav: React.FC<Props> = () => {
   };
 
   return (
-    <nav className="my-8 fixed inset-y-0 left-0 flex flex-col justify-between h-full py-">
+    <nav className="my-8 inset-y-0 left-0   h-full">
       <div className="flex flex-col">
         <a
           href={"https://www.instagram.com/flowergoods.studio/"}

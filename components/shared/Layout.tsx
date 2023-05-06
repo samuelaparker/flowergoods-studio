@@ -9,12 +9,14 @@ export interface LayoutProps {
 
 export default function Layout({ children, bgColor, pageTitle }: LayoutProps) {
   return (
-    <div className={`flex min-h-screen flex-col text-black bg-${bgColor}`}>
-      <Head>
-        <title>{pageTitle}</title>
-      </Head>
-      <Nav />
-      <div className="mt-20 flex-grow px-4 md:px-16 lg:px-32">{children} </div>
+    <div className={`bg-${bgColor}`}>
+      <div className={`h-full flex flex-row`}>
+        <Head>
+          <title>{pageTitle}</title>
+        </Head>
+        <Nav />
+        <div className="">{children} </div>
+      </div>
     </div>
   );
 }
