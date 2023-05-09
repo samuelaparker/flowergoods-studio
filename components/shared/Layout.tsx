@@ -9,7 +9,7 @@ export interface LayoutProps {
 
 export default function Layout({ children, bgColor, pageTitle }: LayoutProps) {
   return (
-    <div className={`bg-${bgColor}`}>
+    <div className={`px-8 bg-${bgColor}`}>
       <div className={`h-full flex flex-row`}>
         <Head>
           <title>{pageTitle}</title>
