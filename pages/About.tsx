@@ -1,11 +1,16 @@
 import React from "react";
 import Layout from "@/components/shared/Layout";
+import { useEffect } from "react";
 
 const About: React.FC = () => {
+  useEffect(() => {
+    document.body.style.backgroundColor = "#ba5a87";
+  }, []);
+
   return (
-    <Layout bgColor="brand-pink" pageTitle="About">
+    <Layout pageTitle="About">
       <div className="h-screen">
-        <div className="max-w-4xl mx-auto py-8 px-8 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto py-8 px-8 sm:px-6 lg:px-8 ">
           <h1 className="text-7xl mb-4 font-black text-right">about</h1>
           <p className="leading-loose">
             Hey there, welcome to flowergoods.studio! flowergoods.studio is run
