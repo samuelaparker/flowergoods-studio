@@ -20,6 +20,14 @@
 }
 
 body {
+  margin: 0px;
+  padding: 0px;
   color: rgb(var(--foreground-rgb));
   background: var(--brand-background);
+  max-width: 1600px;
+  margin: 0 auto;
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+  }
 }

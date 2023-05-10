@@ -2,19 +2,21 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Video from "../components/Video";
 import Layout from "../components/shared/Layout";
-
-const inter = Inter({ subsets: ["latin"] });
+import Heading from "../components/Heading";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    document.body.style.backgroundColor = "#64cd85";
+  }, []);
+
   return (
     <div className="h-screen">
       <Layout pageTitle="Home Page">
         <div>
-          <h1 className="my-8 text-7xl font-light text-right">
-            saturday flowers
-          </h1>
-          <div className="flex flex-col h-8">
-            <div className="text-base font-thin">by</div>
+          <Heading />
+          <div className="flex flex-col sm:pl-40">
+            <div className="text-base font-thin pb-40">by</div>
             <div className="text-2xl font-medium">flowergoods.studio</div>
           </div>
         </div>

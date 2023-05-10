@@ -16,14 +16,14 @@ const SidebarNav: React.FC<Props> = () => {
   };
 
   return (
-    <nav className="my-4 inset-y-0 left-0   h-full">
-      <div className="flex flex-col">
+    <nav className="my-4 inset-y-0 left-0  h-full">
+      <div className="flex flex-col font-thin">
         <a
           href={"https://www.instagram.com/flowergoods.studio/"}
           target="_blank"
           rel="noopener"
           key="instagram"
-          className="px-4 py-8 transform -rotate-90"
+          className="py-8 transform -rotate-90"
         >
           instagram
         </a>
@@ -31,18 +31,14 @@ const SidebarNav: React.FC<Props> = () => {
           href="#"
           onClick={handleClick}
           key="email"
-          className="px-4 py-8 transform -rotate-90"
+          className="py-8 transform -rotate-90"
         >
           email
         </a>
-        <Link
-          href={"/About"}
-          key="About"
-          className="px-4 py-8 transform -rotate-90"
-        >
+        <Link href={"/About"} key="About" className="py-8 transform -rotate-90">
           about
         </Link>
-        <Link href={"/"} key="Home" className="px-4 py-8 transform -rotate-90">
+        <Link href={"/"} key="Home" className="  py-8 transform -rotate-90">
           home
         </Link>
       </div>
