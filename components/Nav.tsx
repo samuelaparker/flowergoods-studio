@@ -23,7 +23,7 @@ const SidebarNav: React.FC<Props> = () => {
           target="_blank"
           rel="noopener"
           key="instagram"
-          className="px-4 py-8 text-gray-700 transform -rotate-90"
+          className="px-4 py-8 transform -rotate-90"
         >
           instagram
         </a>
@@ -31,22 +31,18 @@ const SidebarNav: React.FC<Props> = () => {
           href="#"
           onClick={handleClick}
           key="email"
-          className="px-4 py-8 text-gray-700 transform -rotate-90"
+          className="px-4 py-8 transform -rotate-90"
         >
           email
         </a>
         <Link
           href={"/About"}
           key="About"
-          className="px-4 py-8 text-gray-700 transform -rotate-90"
+          className="px-4 py-8 transform -rotate-90"
         >
           about
         </Link>
-        <Link
-          href={"/"}
-          key="Home"
-          className="px-4 py-8 text-gray-700 transform -rotate-90"
-        >
+        <Link href={"/"} key="Home" className="px-4 py-8 transform -rotate-90">
           home
         </Link>
       </div>
