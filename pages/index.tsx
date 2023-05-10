@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import Video from "../components/Video";
 import Layout from "../components/shared/Layout";
 import Heading from "../components/Heading";
+import StudioName from "@/components/StudioName";
+import By from "@/components/StudioName";
+
 import { useEffect } from "react";
 
 export default function Home() {
@@ -16,8 +19,8 @@ export default function Home() {
         <div>
           <Heading />
           <div className="flex flex-col sm:pl-40">
-            <div className="text-base font-thin pb-40">by</div>
-            <div className="text-2xl font-medium">flowergoods.studio</div>
+            <By />
+            <StudioName />
           </div>
         </div>
         <div className="my-8">
