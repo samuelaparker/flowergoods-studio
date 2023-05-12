@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <Layout pageTitle="Home Page">
       <div className="">
-        <Heading />
+        <Heading className="my-8 sm:text-7xl text-4xl font-light text-right" />
         <div>
           <div className="flex flex-col items-center">
             <div>
