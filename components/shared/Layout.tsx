@@ -9,7 +9,7 @@ export interface LayoutProps {
 export default function Layout({ children, pageTitle }: LayoutProps) {
   return (
     <div className="mr-4 md:mr-8">
-      <div className={`h-full flex flex-row`}>
+      <div className="flex flex-row">
         <Head>
           <title>{pageTitle}</title>
         </Head>

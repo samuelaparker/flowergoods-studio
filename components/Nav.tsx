@@ -16,8 +16,8 @@ const SidebarNav: React.FC<Props> = () => {
   };
 
   return (
-    <nav className="my-4 inset-y-0 left-0  h-full">
-      <div className="flex flex-col font-thin">
+    <nav className="mt-10 inset-y-0 left-0  h-full">
+      <div className="flex flex-col font-thin text-xl">
         <a
           href={"https://www.instagram.com/flowergoods.studio/"}
           target="_blank"
