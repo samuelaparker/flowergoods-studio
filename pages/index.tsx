@@ -55,9 +55,11 @@ const Home = () => {
           <div>
             <div className="flex flex-row items-center mt-40 pr-20">
               <By className="font-thin text-3xl pr-10" />
-              <Video src="/fg-vid-1.mp4" />
+              <div className="">
+                <Video src="/fg-vid-1.mp4" />
+              </div>
             </div>
-            <StudioName className="pt-20 text-4xl font-bold" />
+            <StudioName className="pt-20 text-4xl font-bold pr-20" />
           </div>
           <div className="border-l-[1px] border-black mt-20 pl-20">
             <Heading className="text-8xl text-center" />
