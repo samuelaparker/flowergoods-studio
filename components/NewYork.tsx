@@ -1,3 +1,9 @@
-export default function By() {
-  return <div className="text-base font-thin pb-20">new york</div>;
+export interface ComponentProps {
+  className?: string;
 }
+
+const NewYork: React.FC<ComponentProps> = ({ className }) => {
+  return <div className={className}>new york</div>;
+};
+
+export default NewYork;

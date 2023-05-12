@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <Layout pageTitle="Home Page">
-      <div className="lg:hidden">
+      <div className="">
         <Heading />
         <div>
           <div className="flex flex-col items-center">
@@ -30,7 +30,7 @@ export default function Home() {
           <Video src="/fg-vid-1.mp4" />
         </div>
         <div className="flex flex-col items-center py-4">
-          <NewYork />
+          <NewYork className="text-base font-thin pb-20" />
         </div>
       </div>
 
