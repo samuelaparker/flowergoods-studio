@@ -11,6 +11,7 @@ const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    document.body.style.backgroundColor = "#64cd85";
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 768); // Adjust the breakpoint as needed
       setIsLoaded(true);

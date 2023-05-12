@@ -28,6 +28,7 @@ const Video: FC<Props> = ({ src }) => {
         onLoadedData={handleLoadedData}
         loop
         autoPlay
+        muted
       >
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
