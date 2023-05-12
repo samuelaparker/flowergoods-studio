@@ -22,7 +22,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <div>
               <By className="font-thin text-base pb-20" />
-              <StudioName />
+              <StudioName className="text-base font-medium sm:text-2xl" />
             </div>
           </div>
         </div>

@@ -1,5 +1,9 @@
-export default function StudioName() {
-  return (
-    <div className="text-base font-medium sm:text-2xl">flowergoods.studio</div>
-  );
+export interface ComponentProps {
+  className?: string;
 }
+
+const StudioName: React.FC<ComponentProps> = ({ className }) => {
+  return <div className={className}>flowergoods.studio</div>;
+};
+
+export default StudioName;
