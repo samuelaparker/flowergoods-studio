@@ -10,7 +10,7 @@ const Video: FC<Props> = ({ src }) => {
   console.log("SRC: ", src);
   return (
     <div className="relative pb-9/16">
-      <video className="" controls muted>
+      <video className="" controls muted autoPlay loop>
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
