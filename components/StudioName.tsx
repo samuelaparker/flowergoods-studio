@@ -1,3 +1,5 @@
 export default function StudioName() {
-  return <div className="text-2xl font-medium">flowergoods.studio</div>;
+  return (
+    <div className="text-base font-medium sm:text-2xl">flowergoods.studio</div>
+  );
 }
