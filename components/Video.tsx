@@ -29,6 +29,7 @@ const Video: FC<Props> = ({ src }) => {
         loop
         autoPlay
         muted
+        playsInline
       >
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
