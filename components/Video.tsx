@@ -4,6 +4,8 @@ interface Props {
   src: string;
 }
 
+//to do before hosting add: "autoPlay loop" attributes to video element
+
 const Video: FC<Props> = ({ src }) => {
   console.log("SRC: ", src);
   return (

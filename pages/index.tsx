@@ -16,20 +16,38 @@ export default function Home() {
 
   return (
     <Layout pageTitle="Home Page">
-      <div>
+      <div className="lg:hidden">
         <Heading />
-        <div className="flex flex-col items-center">
-          <div>
-            <By />
-            <StudioName />
+        <div>
+          <div className="flex flex-col items-center">
+            <div>
+              <By className="font-thin text-base pb-20" />
+              <StudioName />
+            </div>
           </div>
         </div>
+        <div className="my-4">
+          <Video src="/fg-vid-1.mp4" />
+        </div>
+        <div className="flex flex-col items-center py-4">
+          <NewYork />
+        </div>
       </div>
-      <div className="my-4">
-        <Video src="/fg-vid-1.mp4" />
-      </div>
-      <div className="flex flex-col items-center">
-        <NewYork />
+
+      {/* DESKTOP*/}
+      <div className="flex flex-row">
+        <div>
+          <div className="flex flex-row items-center">
+            <By className="font-thin" />
+            <Video src="/fg-vid-1.mp4" />
+          </div>
+          <StudioName />
+        </div>
+        <div className="border-l-2 border-black">
+          <Heading />
+          <Video src="/fg-vid-2.mp4" />
+          <NewYork />
+        </div>
       </div>
     </Layout>
   );
