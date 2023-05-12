@@ -5,6 +5,7 @@ import Layout from "../components/shared/Layout";
 import Heading from "../components/Heading";
 import StudioName from "@/components/StudioName";
 import By from "@/components/By";
+import NewYork from "@/components/NewYork";
 
 import { useEffect } from "react";
 
@@ -26,6 +27,9 @@ export default function Home() {
       </div>
       <div className="my-4">
         <Video src="/fg-vid-1.mp4" />
+      </div>
+      <div className="flex flex-col items-center">
+        <NewYork />
       </div>
     </Layout>
   );
