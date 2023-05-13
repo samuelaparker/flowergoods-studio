@@ -56,7 +56,7 @@ const Home = () => {
           <div>
             <div className="flex flex-row items-center mt-40 pr-20">
               <By className="font-thin text-3xl pr-10" />
-              <div className="">
+              <div className=" w-[430px]">
                 <Video src="/fg-vid-1.mp4" />
               </div>
             </div>
@@ -64,7 +64,7 @@ const Home = () => {
           </div>
           <div className="border-l-[1px] border-black mt-20 pl-20">
             <Heading className="text-8xl text-center" />
-            <div className="mt-14">
+            <div className="mt-14 mx-auto w-[530px]">
               <Video src="/fg-vid-2.mp4" />
             </div>
             <NewYork className="pt-10 font-light text-2xl text-center" />
