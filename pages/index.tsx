@@ -55,7 +55,7 @@ const Home = () => {
         <div className="flex flex-row">
           <div>
             <div className="flex flex-row items-center mt-40 pr-20">
-              <By className="font-thin text-3xl pr-10" />
+              <By className="font-thin text-[32px] pr-10" />
               <div className=" w-[430px]">
                 <Video src="/fg-vid-1.mp4" />
               </div>

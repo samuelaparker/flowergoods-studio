@@ -3,7 +3,13 @@ export interface ComponentProps {
 }
 
 const Heading: React.FC<ComponentProps> = ({ className }) => {
-  return <h1 className={className}>saturday flowers</h1>;
+  return (
+    <h1 className={className}>
+      {" "}
+      <span className="block">saturday</span>
+      <span className="block">flowers</span>
+    </h1>
+  );
 };
 
 export default Heading;
