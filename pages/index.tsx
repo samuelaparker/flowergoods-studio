@@ -34,12 +34,12 @@ const Home = () => {
       {isSmallScreen ? (
         // SMALLER THAN DESKTOP
         <div className="">
-          <Heading className="my-8 sm:text-7xl text-4xl font-light text-right" />
+          <Heading className="my-8 sm:text-7xl text-[54px] text-center" />
           <div>
             <div className="flex flex-col items-center">
               <div>
-                <By className="font-thin text-base pb-20" />
-                <StudioName className="text-base font-medium sm:text-2xl" />
+                <By className="font-extralight text-lg pb-20" />
+                <StudioName className="font-medium text-xl" />
               </div>
             </div>
           </div>
