@@ -10,7 +10,7 @@ const SidebarNav: React.FC<Props> = () => {
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    window.location.href = `mailto:example@example.com?subject=${encodeURIComponent(
+    window.location.href = `mailto:hello@flowergoods.studio?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
   };
