@@ -10,13 +10,13 @@ const About: React.FC = () => {
   return (
     <Layout pageTitle="About">
       <div className="h-screen">
-        <div className="max-w-4xl mx-auto py-8 px-8 sm:px-6 lg:px-8 ">
+        <div className="mx-auto py-8 px-8 sm:px-6 lg:px-8 ">
           <div className="lg:flex lg:flex-row-reverse">
             <h1 className="lg:text-[80px] text-[50px] mb-4 font-extrabold text-right">
               about
             </h1>
 
-            <div className="text-lg font-light mt-24 lg:mr-10">
+            <div className="text-lg mt-24 lg:mr-10">
               <p>
                 Hey there, welcome to flowergoods.studio! flowergoods.studio is
                 run by Trish Ramirez-Parker. We&apos;re all about bringing a
