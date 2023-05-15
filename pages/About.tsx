@@ -16,7 +16,7 @@ const About: React.FC = () => {
               about
             </h1>
 
-            <div className="text-lg mt-24 lg:mr-10">
+            <div className="text-lg lg:mt-32 mt-10 md:mr-10 lg:ml-56">
               <p>
                 Hey there, welcome to flowergoods.studio! flowergoods.studio is
                 run by Trish Ramirez-Parker. We&apos;re all about bringing a
