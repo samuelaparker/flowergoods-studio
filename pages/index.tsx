@@ -44,7 +44,7 @@ const Home = () => {
             </div>
           </div>
           <div className="my-4">
-            <Video src="/fg-vid-1.mp4" />
+            <Video src="/fg-vid-2.mp4" />
           </div>
           <div className="flex flex-col items-center py-4">
             <NewYork className="text-base font-thin pb-20" />
