@@ -39,6 +39,7 @@ const SidebarNav: React.FC<Props> = () => {
           href={"/About"}
           key="About"
           className="py-8 transform -rotate-90 hover:opacity-50"
+          prefetch={true}
         >
           about
         </Link>
