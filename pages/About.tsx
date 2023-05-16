@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "@/components/shared/Layout";
-import { useEffect } from "react";
+import Image from "next/image";
 
 const About: React.FC = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   useEffect(() => {
     document.body.style.backgroundColor = "#ba5a87";
   }, []);
 
   return (
     <Layout pageTitle="About">
-      <div className="h-screen">
+      <div className="h-screen relative">
         <div className="mx-auto py-8 px-8 sm:px-6 lg:px-8 ">
           <div className="lg:flex lg:flex-row-reverse">
             <h1 className="lg:text-[80px] text-[50px] mb-4 font-extrabold text-right">
@@ -19,10 +21,30 @@ const About: React.FC = () => {
             <div className="text-lg lg:mt-32 mt-10 md:mr-10 lg:ml-56">
               <p>
                 Hey there, welcome to flowergoods.studio! flowergoods.studio is
-                run by Trish Ramirez-Parker. We&apos;re all about bringing a
-                touch of beauty + happy brain chemicals to your life through
-                florals and floral goods.
+                run by{" "}
+                <span
+                  className="hover:underline cursor-pointer"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  Trish Ramirez-Parker
+                </span>
+                . We&apos;re all about bringing a touch of beauty + happy brain
+                chemicals to your life through florals and floral goods.
               </p>
+              {isHovered && (
+                <div className="absolute left-[60%]">
+                  <Image
+                    src="/popup-img.png"
+                    alt="Medium Image"
+                    className="mt-4"
+                    width={396}
+                    height={596}
+                    // fill={true}
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+              )}
               <p className="mt-4">
                 Our signature concept, saturday flowers, is inspired by our
                 personal practice of rest + stillness. Every saturday, we
