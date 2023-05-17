@@ -34,7 +34,7 @@ const Home = () => {
       {isSmallScreen ? (
         // SMALLER THAN DESKTOP
         <div className="">
-          <Heading className="my-8 sm:text-7xl text-[54px] text-center" />
+          <Heading className="my-8 sm:text-7xl text-[54px] text-center w-screen" />
           <div>
             <div className="flex flex-col items-center">
               <div>
