@@ -35,8 +35,8 @@ const About: React.FC = () => {
               {isHovered && (
                 <div className="absolute left-[60%]">
                   <Image
-                    src="/popup-img.png"
-                    alt="Medium Image"
+                    src="/saturday-flowers-14.jpeg"
+                    alt="Saturday Flowers Popup Image"
                     className="mt-4"
                     width={396}
                     height={596}
