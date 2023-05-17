@@ -22,7 +22,9 @@ export default function Layout({ children, pageTitle }: LayoutProps) {
           <Head>
             <title>{pageTitle}</title>
           </Head>
-          <Nav />
+          <div>
+            <Nav />
+          </div>
           <div className="">{children} </div>
         </div>
       </div>

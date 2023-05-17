@@ -16,9 +16,9 @@ const SidebarNav: React.FC<Props> = () => {
   };
 
   return (
-    <nav className="w-[20px] md:mt-[300px] mt-[200px]">
-      <div className="font-extralight md:text-2xl md:leading-0 text-base ml-6 md:ml-8 -rotate-90 translate-y-[600%]">
-        <Link href={"/"} key="Home" className="  py-8   mx-4 hover:opacity-50">
+    <nav className="w-[20px] ml-4 md:ml-8 md:mt-[300px] mt-[200px]">
+      <div className="font-extralight md:text-2xl md:leading-0 text-base -rotate-90 translate-y-[600%]">
+        <Link href={"/"} key="Home" className="    mx-4 hover:opacity-50">
           home
         </Link>
         <Link
