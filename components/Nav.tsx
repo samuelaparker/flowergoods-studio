@@ -4,9 +4,8 @@ import Link from "next/link";
 interface Props {}
 
 const SidebarNav: React.FC<Props> = () => {
-  const subject = "Inquiry from flowergoods.studio";
-  const body =
-    "Hi,\n\nI wanted to get in touch with you about...\n\nBest regards,\nYour Name";
+  const subject = "";
+  const body = "";
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
