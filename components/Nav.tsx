@@ -39,7 +39,7 @@ const SidebarNav: React.FC<Props> = () => {
         <Link
           href={"https://www.instagram.com/flowergoods.studio/"}
           target="_blank"
-          rel="noopener"
+          rel="noreferrer noopener"
           key="instagram"
           className="py-8  mx-4 hover:opacity-50"
         >
@@ -48,6 +48,8 @@ const SidebarNav: React.FC<Props> = () => {
         <Link
           href={"https://flowergoodstudio.myshopify.com/"}
           key="shop"
+          rel="noreferrer noopener"
+          target="_blank"
           className="py-8  mx-4 hover:opacity-50"
         >
           shop

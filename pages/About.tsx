@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from "@/components/shared/Layout";
 import Image from "next/image";
+import Link from "next/link";
 
 const About: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -8,6 +9,16 @@ const About: React.FC = () => {
   useEffect(() => {
     document.body.style.backgroundColor = "#ba5a87";
   }, []);
+
+  const subject = "";
+  const body = "";
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.location.href = `mailto:hello@flowergoods.studio?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
 
   return (
     <Layout pageTitle="About">
@@ -62,6 +73,21 @@ const About: React.FC = () => {
                 Thanks for stopping by and checking us out. We hope these
                 florals + goods add a touch of beauty + mindfulness to your
                 everyday life.
+              </p>
+              <p className="mt-4">
+                Have a question or request? Let&apos;s chat! Contact me at
+                <span className="font-bold">
+                  <Link
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    onClick={handleClick}
+                    key="email"
+                    className="hover:opacity-50"
+                  >
+                    {" hello@flowergoods.studio."}
+                  </Link>
+                </span>
               </p>
             </div>
           </div>
