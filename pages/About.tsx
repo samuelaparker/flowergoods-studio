@@ -30,7 +30,7 @@ const About: React.FC = () => {
                   Trish Ramirez-Parker
                 </span>
                 . We&apos;re all about bringing a touch of beauty + happy brain
-                chemicals to your life through florals and floral goods.
+                chemicals to your life through florals and goods.
               </p>
               {isHovered && (
                 <div className="absolute left-[60%]">
@@ -46,21 +46,22 @@ const About: React.FC = () => {
                 </div>
               )}
               <p className="mt-4">
-                Our signature concept, saturday flowers, is inspired by our
-                personal practice of rest + stillness. Every saturday, we
+                Our signature concept,{" "}
+                <span className="font-bold">saturday flowers</span>, is inspired
+                by our personal practice of rest + stillness. Every Saturday, we
                 deliver fresh blooms to your doorstep, so you can enjoy them
                 over a cup of coffee or tea. It&apos;s a lovely way to add a
                 touch of beauty to your weekend.
               </p>
               <p className="mt-4">
-                We also offer one of a kind vases, floral arrangements + design
-                for all kinds of occasions, from weddings to corporate events
-                and everything in between.
+                We also offer floral arrangements + design for all kinds of
+                occasions, from weddings to corporate events and everything in
+                between.
               </p>
               <p className="mt-4">
-                Thanks for stopping by and checking us out. We can&apos;t wait
-                to help make your day a little brighter with some seriously
-                amazing blooms!
+                Thanks for stopping by and checking us out. We hope these
+                florals + goods add a touch of beauty + mindfulness to your
+                everyday life.
               </p>
             </div>
           </div>
