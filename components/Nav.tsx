@@ -15,7 +15,7 @@ const SidebarNav: React.FC<Props> = () => {
   };
 
   return (
-    <nav className="w-[20px] ml-4 md:ml-8 md:mt-[300px] mt-[200px]">
+    <nav className="w-[20px] ml-4 md:ml-8 md:mt-[350px] mt-[250px]">
       <div className="font-extralight md:text-2xl md:leading-0 text-base -rotate-90 translate-y-[600%]">
         <Link href={"/"} key="Home" className="mx-4 hover:opacity-50">
           home
@@ -44,6 +44,15 @@ const SidebarNav: React.FC<Props> = () => {
           className="py-8  mx-4 hover:opacity-50"
         >
           instagram
+        </Link>
+        <Link
+          href={"https://flowergoodstudio.myshopify.com/"}
+          target="_blank"
+          rel="noopener"
+          key="shop"
+          className="py-8  mx-4 hover:opacity-50"
+        >
+          shop
         </Link>
       </div>
     </nav>
