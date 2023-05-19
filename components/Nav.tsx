@@ -47,8 +47,6 @@ const SidebarNav: React.FC<Props> = () => {
         </Link>
         <Link
           href={"https://flowergoodstudio.myshopify.com/"}
-          target="_blank"
-          rel="noopener"
           key="shop"
           className="py-8  mx-4 hover:opacity-50"
         >
