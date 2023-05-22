@@ -15,9 +15,9 @@ const SidebarNav: React.FC<Props> = () => {
   };
 
   return (
-    <nav className="w-[20px] ml-4 md:ml-8 md:mt-[350px] mt-[250px]">
-      <div className="font-extralight md:text-2xl md:leading-0 text-base -rotate-90 translate-y-[600%]">
-        <Link href={"/"} key="Home" className="mx-4 hover:opacity-50">
+    <nav className="block fixed">
+      <div className="font-extralight md:text-2xl text-base -rotate-90 translate-y-[800%] translate-x-[-40%]  ">
+        <Link href={"/"} key="Home" className="py-4 mx-4 hover:opacity-50">
           home
         </Link>
         <Link
@@ -28,15 +28,15 @@ const SidebarNav: React.FC<Props> = () => {
           about
         </Link>
 
-        <Link
+        {/* <Link
           href="#"
           onClick={handleClick}
           key="email"
           className="py-8   mx-4 hover:opacity-50"
         >
           email
-        </Link>
-        <Link
+        </Link> */}
+        {/* <Link
           href={"https://www.instagram.com/flowergoods.studio/"}
           target="_blank"
           rel="noreferrer noopener"
@@ -44,7 +44,7 @@ const SidebarNav: React.FC<Props> = () => {
           className="py-8  mx-4 hover:opacity-50"
         >
           instagram
-        </Link>
+        </Link> */}
         <Link
           href={"https://flowergoodstudio.myshopify.com/"}
           key="shop"
@@ -53,6 +53,17 @@ const SidebarNav: React.FC<Props> = () => {
           className="py-8  mx-4 hover:opacity-50"
         >
           shop
+        </Link>
+        <Link
+          href={
+            "https://flowergoodstudio.myshopify.com/collections/order-flowers"
+          }
+          key="order flowers"
+          rel="noreferrer noopener"
+          target="_blank"
+          className="py-8  mx-4 hover:opacity-50"
+        >
+          order flowers
         </Link>
       </div>
     </nav>

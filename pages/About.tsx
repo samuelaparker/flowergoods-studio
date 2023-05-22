@@ -3,6 +3,8 @@ import Layout from "@/components/shared/Layout";
 import Image from "next/image";
 import Link from "next/link";
 
+import { BsInstagram } from "react-icons/bs";
+
 const About: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -23,7 +25,7 @@ const About: React.FC = () => {
   return (
     <Layout pageTitle="About">
       <div className="h-screen relative">
-        <div className="mx-auto py-8 px-8 sm:px-6 lg:px-8 ">
+        <div className="mx-auto py-8 pl-20 pr-8 lg:px-8 ">
           <div className="lg:flex lg:flex-row-reverse">
             <h1 className="lg:text-[80px] text-[50px] mb-4 font-extrabold text-right">
               about

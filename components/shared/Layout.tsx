@@ -18,7 +18,7 @@ export default function Layout({ children, pageTitle }: LayoutProps) {
     <div className={`${montserrat.variable}`}>
       <div className="font-sans  max-w-[1728px] h-screen">
         {/* border border-black border-solid */}
-        <div className="flex justify-start ">
+        <div className="flex justify-start">
           <Head>
             <title>{pageTitle}</title>
           </Head>
