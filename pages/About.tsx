@@ -27,9 +27,21 @@ const About: React.FC = () => {
       <div className="h-screen relative">
         <div className="mx-auto py-8 pl-20 pr-8 lg:px-8 ">
           <div className="lg:flex lg:flex-row-reverse">
-            <h1 className="lg:text-[80px] text-[50px] mb-4 font-extrabold text-right">
-              about
-            </h1>
+            <div>
+              <h1 className="lg:text-[80px] text-[50px] mb-4 font-extrabold text-right">
+                about
+              </h1>
+
+              <Link
+                href={"https://www.instagram.com/flowergoods.studio/"}
+                target="_blank"
+                rel="noreferrer noopener"
+                key="instagram"
+                className="hover:opacity-50  "
+              >
+                <BsInstagram className="h-10 w-10" />
+              </Link>
+            </div>
 
             <div className="text-lg lg:mt-32 mt-10 md:mr-10 lg:ml-56">
               <p>
