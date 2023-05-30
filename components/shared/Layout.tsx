@@ -27,9 +27,7 @@ export default function Layout({ children, pageTitle }: LayoutProps) {
           <div>
             <Nav />
           </div>
-          <Suspense fallback={<Loading />}>
-            <div className="">{children} </div>
-          </Suspense>
+          <div className="">{children} </div>
         </div>
       </div>
     </div>
