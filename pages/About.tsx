@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Layout from "@/components/shared/Layout";
 import Image from "next/image";
+import Link from "next/link";
+
+import { BsInstagram } from "react-icons/bs";
 
 const About: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -9,14 +12,36 @@ const About: React.FC = () => {
     document.body.style.backgroundColor = "#ba5a87";
   }, []);
 
+  const subject = "";
+  const body = "";
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.location.href = `mailto:hello@flowergoods.studio?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <Layout pageTitle="About">
       <div className="h-screen relative">
-        <div className="mx-auto py-8 px-8 sm:px-6 lg:px-8 ">
+        <div className="mx-auto py-8 pl-20 pr-8 lg:px-8 ">
           <div className="lg:flex lg:flex-row-reverse">
-            <h1 className="lg:text-[80px] text-[50px] mb-4 font-extrabold text-right">
-              about
-            </h1>
+            <div>
+              <h1 className="lg:text-[80px] text-[50px] mb-4 font-extrabold text-right">
+                about
+              </h1>
+
+              <Link
+                href={"https://www.instagram.com/flowergoods.studio/"}
+                target="_blank"
+                rel="noreferrer noopener"
+                key="instagram"
+                className="hover:opacity-50  "
+              >
+                <BsInstagram className="h-10 w-10" />
+              </Link>
+            </div>
 
             <div className="text-lg lg:mt-32 mt-10 md:mr-10 lg:ml-56">
               <p>
@@ -30,7 +55,7 @@ const About: React.FC = () => {
                   Trish Ramirez-Parker
                 </span>
                 . We&apos;re all about bringing a touch of beauty + happy brain
-                chemicals to your life through florals and floral goods.
+                chemicals to your life through florals and goods.
               </p>
               {isHovered && (
                 <div className="absolute left-[60%]">
@@ -46,21 +71,37 @@ const About: React.FC = () => {
                 </div>
               )}
               <p className="mt-4">
-                Our signature concept, saturday flowers, is inspired by our
-                personal practice of rest + stillness. Every saturday, we
+                Our signature concept,{" "}
+                <span className="font-bold">saturday flowers</span>, is inspired
+                by our personal practice of rest + stillness. Every Saturday, we
                 deliver fresh blooms to your doorstep, so you can enjoy them
                 over a cup of coffee or tea. It&apos;s a lovely way to add a
                 touch of beauty to your weekend.
               </p>
               <p className="mt-4">
-                We also offer one of a kind vases, floral arrangements + design
-                for all kinds of occasions, from weddings to corporate events
-                and everything in between.
+                We also offer floral arrangements + design for all kinds of
+                occasions, from weddings to corporate events and everything in
+                between.
               </p>
               <p className="mt-4">
-                Thanks for stopping by and checking us out. We can&apos;t wait
-                to help make your day a little brighter with some seriously
-                amazing blooms!
+                Thanks for stopping by and checking us out. We hope these
+                florals + goods add a touch of beauty + mindfulness to your
+                everyday life.
+              </p>
+              <p className="mt-4">
+                Have a question or request? Let&apos;s chat! Contact me at
+                <span className="font-bold">
+                  <Link
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    onClick={handleClick}
+                    key="email"
+                    className="hover:opacity-50"
+                  >
+                    {" hello@flowergoods.studio."}
+                  </Link>
+                </span>
               </p>
             </div>
           </div>

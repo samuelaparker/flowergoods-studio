@@ -43,7 +43,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="my-4">
+          <div className="m-auto w-[70%] pt-4">
             <Video src="/fg-vid-2.mp4" />
           </div>
           <div className="flex flex-col items-center py-4">

@@ -4,9 +4,8 @@ import Link from "next/link";
 interface Props {}
 
 const SidebarNav: React.FC<Props> = () => {
-  const subject = "Inquiry from flowergoods.studio";
-  const body =
-    "Hi,\n\nI wanted to get in touch with you about...\n\nBest regards,\nYour Name";
+  const subject = "";
+  const body = "";
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -16,9 +15,9 @@ const SidebarNav: React.FC<Props> = () => {
   };
 
   return (
-    <nav className="w-[20px] ml-4 md:ml-8 md:mt-[300px] mt-[200px]">
-      <div className="font-extralight md:text-2xl md:leading-0 text-base -rotate-90 translate-y-[600%]">
-        <Link href={"/"} key="Home" className="mx-4 hover:opacity-50">
+    <nav className="block fixed z-40">
+      <div className="font-extralight md:text-2xl text-base -rotate-90 translate-y-[800%] translate-x-[-40%]  ">
+        <Link href={"/"} key="Home" className="py-4 mx-4 hover:opacity-50">
           home
         </Link>
         <Link
@@ -29,22 +28,42 @@ const SidebarNav: React.FC<Props> = () => {
           about
         </Link>
 
-        <Link
+        {/* <Link
           href="#"
           onClick={handleClick}
           key="email"
           className="py-8   mx-4 hover:opacity-50"
         >
           email
-        </Link>
-        <Link
+        </Link> */}
+        {/* <Link
           href={"https://www.instagram.com/flowergoods.studio/"}
           target="_blank"
-          rel="noopener"
+          rel="noreferrer noopener"
           key="instagram"
           className="py-8  mx-4 hover:opacity-50"
         >
           instagram
+        </Link> */}
+        <Link
+          href={"https://flowergoodstudio.myshopify.com/"}
+          key="shop"
+          rel="noreferrer noopener"
+          target="_blank"
+          className="py-8  mx-4 hover:opacity-50"
+        >
+          shop
+        </Link>
+        <Link
+          href={
+            "https://flowergoodstudio.myshopify.com/collections/order-flowers"
+          }
+          key="order flowers"
+          rel="noreferrer noopener"
+          target="_blank"
+          className="py-8  mx-4 hover:opacity-50"
+        >
+          order flowers
         </Link>
       </div>
     </nav>
