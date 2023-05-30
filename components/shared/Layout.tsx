@@ -1,6 +1,8 @@
 import Nav from "../../components/Nav";
 import Head from "next/head";
 import { Montserrat } from "next/font/google";
+import Loading from "./loading";
+import { Suspense } from "react";
 
 export interface LayoutProps {
   children: React.ReactNode;
@@ -25,7 +27,9 @@ export default function Layout({ children, pageTitle }: LayoutProps) {
           <div>
             <Nav />
           </div>
-          <div className="">{children} </div>
+          <Suspense fallback={<Loading />}>
+            <div className="">{children} </div>
+          </Suspense>
         </div>
       </div>
     </div>
