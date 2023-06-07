@@ -9,7 +9,10 @@ const Video: FC<Props> = ({ src }) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   const handleLoadedData = () => {
-    setIsLoading(false);
+    //TEST OF SUSPENSE BOUNDARY
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
   };
 
   useEffect(() => {
@@ -21,7 +24,7 @@ const Video: FC<Props> = ({ src }) => {
 
   return (
     <div className="relative pb-9/16">
-      {isLoading && <div className="loading-screen">Video Loading...</div>}
+      {/* {isLoading && <div className="loading-screen">Video Loading...</div>} */}
       <video
         ref={videoRef}
         className={isLoading ? "hidden" : ""}
