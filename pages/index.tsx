@@ -1,4 +1,4 @@
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useState } from "react";
 import Layout from "../components/shared/Layout";
 import Heading from "../components/Heading";
 import StudioName from "@/components/StudioName";
@@ -6,13 +6,7 @@ import By from "@/components/By";
 import NewYork from "@/components/NewYork";
 import Video from "../components/Video";
 
-import Loading from "../components/shared/Loading";
-
 const Home = () => {
-  if (typeof window === "undefined") {
-    throw Error("Chat should only render on the client.");
-  }
-
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -60,16 +54,14 @@ const Home = () => {
         // DESKTOP >1024px
         <div className="flex flex-row ml-10">
           <div className="w-4/6">
-            <Suspense fallback={<Loading />}>
-              <div className="flex flex-row items-center justify-center mt-40">
-                <By className="font-extralight text-[32px] pr-16" />
+            <div className="flex flex-row items-center justify-center mt-40">
+              <By className="font-extralight text-[32px] pr-16" />
 
-                <div className="w-2/6">
-                  <Video src="/fg-vid-1.mp4" />
-                </div>
+              <div className="w-2/6">
+                <Video src="/fg-vid-1.mp4" />
               </div>
-              <StudioName className="pt-10 text-4xl font-medium justify-self-end text-center" />
-            </Suspense>
+            </div>
+            <StudioName className="pt-10 text-4xl font-medium justify-self-end text-center" />
           </div>
           <div className="h-screen flex items-center">
             <div className="bg-black w-[1px] h-[90%] mr-10"></div>
