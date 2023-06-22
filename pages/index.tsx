@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Layout from "../components/shared/Layout";
 import Heading from "../components/Heading";
 import StudioName from "@/components/StudioName";
 import By from "@/components/By";
@@ -30,7 +29,7 @@ const Home = () => {
   }
 
   return (
-    <Layout pageTitle="Home Page">
+    <>
       {isSmallScreen ? (
         // SMALLER THAN DESKTOP
         <div className="">
@@ -79,7 +78,7 @@ const Home = () => {
           </div>
         </div>
       )}
-    </Layout>
+    </>
   );
 };
 
