@@ -5,6 +5,7 @@ import By from "@/components/By";
 import NewYork from "@/components/NewYork";
 import Video from "../components/Video";
 
+//build
 const Home = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -51,6 +52,7 @@ const Home = () => {
         </div>
       ) : (
         // DESKTOP >1024px
+
         <div className="flex flex-row ml-10">
           <div className="w-4/6">
             <div className="flex flex-row items-center justify-center mt-40">
@@ -70,6 +72,7 @@ const Home = () => {
             {/* border-l-[1px] border-black my-8 */}
             <div className="mt-20 pl-20">
               <Heading className="text-8xl text-center" />
+
               <div className="mt-14 mx-auto max-w-[300px]">
                 <Video src="/fg-vid-2.mp4" />
               </div>

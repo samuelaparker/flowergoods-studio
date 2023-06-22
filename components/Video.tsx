@@ -5,15 +5,14 @@ interface Props {
 }
 
 const Video: FC<Props> = ({ src }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
-  const handleLoadedData = () => {
-    //TEST OF SUSPENSE BOUNDARY
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  };
+  // const handleLoadedData = () => {
+  //   //TEST OF SUSPENSE BOUNDARY
+
+  //   setIsLoading(false);
+  // };
 
   useEffect(() => {
     if (videoRef.current) {
@@ -23,20 +22,22 @@ const Video: FC<Props> = ({ src }) => {
   }, []);
 
   return (
-    <div className="relative pb-9/16">
-      {/* {isLoading && <div className="loading-screen">Video Loading...</div>} */}
-      <video
-        ref={videoRef}
-        className={isLoading ? "hidden" : ""}
-        onLoadedData={handleLoadedData}
-        loop
-        autoPlay
-        muted
-        playsInline
-      >
-        <source src={src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div className="">
+      <div className="relative pb-9/16">
+        {/* {isLoading && <div>Video Loading...</div>} */}
+        <video
+          ref={videoRef}
+          // className={isLoading ? "invisible" : ""}
+          // onLoadedData={handleLoadedData}
+          loop
+          autoPlay
+          muted
+          playsInline
+        >
+          <source src={src} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   );
 };
