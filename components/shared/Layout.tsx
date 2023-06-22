@@ -1,8 +1,6 @@
 import Nav from "../../components/Nav";
 import Head from "next/head";
 import { Montserrat } from "next/font/google";
-import Loading from "./Loading";
-import { Suspense } from "react";
 
 export interface LayoutProps {
   children: React.ReactNode;
