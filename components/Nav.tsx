@@ -56,7 +56,7 @@ const SidebarNav: React.FC<Props> = () => {
         </Link>
         <Link
           href={
-            "https://flowergoodstudio.myshopify.com/collections/order-flowers"
+            "https://flowergoodstudio.myshopify.com/products/saturday-flowers"
           }
           key="order flowers"
           rel="noreferrer noopener"
