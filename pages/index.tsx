@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Heading from "../components/Heading";
 import StudioName from "@/components/StudioName";
 import By from "@/components/By";
-import NewYork from "@/components/NewYork";
+import City from "@/components/City";
 import Video from "../components/Video";
 
 //build
@@ -47,7 +47,7 @@ const Home = () => {
             <Video src="/fg-vid-2.mp4" />
           </div>
           <div className="flex flex-col items-center py-4">
-            <NewYork className="text-base font-thin pb-20" />
+            <City className="text-base font-thin pb-20" />
           </div>
         </div>
       ) : (
@@ -76,7 +76,7 @@ const Home = () => {
               <div className="mt-14 mx-auto max-w-[300px]">
                 <Video src="/fg-vid-2.mp4" />
               </div>
-              <NewYork className="pt-10 font-thin text-2xl text-center" />
+              <City className="pt-10 font-thin text-2xl text-center" />
             </div>
           </div>
         </div>
