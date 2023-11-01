@@ -9,7 +9,7 @@ const About: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    document.body.style.backgroundColor = "#ba5a87";
+    document.body.style.backgroundColor = "#F5F5DC";
   }, []);
 
   const subject = "";
