@@ -45,8 +45,7 @@ const About: React.FC = () => {
 
             <div className="text-lg lg:mt-32 mt-10 md:mr-10 lg:ml-56">
               <p>
-                Hey there, welcome to flowergoods.studio! flowergoods.studio is
-                run by{" "}
+                Flowergoods.studio was created by{" "}
                 <span
                   className="hover:underline cursor-pointer"
                   onMouseEnter={() => setIsHovered(true)}
@@ -54,8 +53,12 @@ const About: React.FC = () => {
                 >
                   Trish Ramirez-Parker
                 </span>
-                . We&apos;re all about bringing a touch of beauty + happy brain
-                chemicals to your life through florals and goods.
+                . in 2023 after switching gears in her career in New York City.
+                With her background in operations and the creative,
+                flowergoods.studio came to be. Flowergoods.studio is now a
+                Richmond, Virginia based studio. We&apos;re all about bringing a
+                touch of beauty + happy brain chemicals to your life through
+                florals and goods
               </p>
               {isHovered && (
                 <div className="absolute left-[60%]">
@@ -74,22 +77,16 @@ const About: React.FC = () => {
                 Our signature concept,{" "}
                 <span className="font-bold">saturday flowers</span>, is inspired
                 by our personal practice of rest + stillness. Every Saturday, we
-                deliver fresh blooms to your doorstep, so you can enjoy them
-                over a cup of coffee or tea. It&apos;s a lovely way to add a
-                touch of beauty to your weekend.
+                deliver fresh flowers to your doorstep, so you can enjoy them
+                over a cup of coffee and a pastry.
               </p>
               <p className="mt-4">
                 We also offer floral arrangements + design for all kinds of
-                occasions, from weddings to corporate events and everything in
-                between.
+                occasions, from intimate gatherings to floral installs for large
+                events
               </p>
               <p className="mt-4">
-                Thanks for stopping by and checking us out. We hope these
-                florals + goods add a touch of beauty + mindfulness to your
-                everyday life.
-              </p>
-              <p className="mt-4">
-                Have a question or request? Let&apos;s chat! Contact me at
+                Thanks for stopping by and checking us out. Get
                 <span className="font-bold">
                   <Link
                     href="#"
@@ -99,9 +96,10 @@ const About: React.FC = () => {
                     key="email"
                     className="hover:opacity-50"
                   >
-                    {" hello@flowergoods.studio."}
+                    {" in touch "}
                   </Link>
                 </span>
+                if you&apos;d like to work together.
               </p>
             </div>
           </div>
