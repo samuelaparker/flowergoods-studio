@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import { BsInstagram } from "react-icons/bs";
@@ -66,9 +66,11 @@ const About: React.FC = () => {
                   className="mt-4"
                   width={396}
                   height={596}
-                  // fill={true}
-                  style={{ objectFit: "contain" }}
-                />
+                  style={{
+                    objectFit: "contain",
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </div>
             )}
             <p className="mt-4">
