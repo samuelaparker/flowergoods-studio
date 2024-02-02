@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,9 +9,9 @@ import { BsInstagram } from "react-icons/bs";
 const About: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
 
-  useEffect(() => {
-    document.body.style.backgroundColor = "#F5F5DC";
-  }, []);
+  // useEffect(() => {
+  //   document.body.style.backgroundColor = "#F5F5DC";
+  // }, []);
 
   const subject = "";
   const body = "";
@@ -69,8 +71,9 @@ const About: React.FC = () => {
                   style={{
                     objectFit: "contain",
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               </div>
             )}
             <p className="mt-4">

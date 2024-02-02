@@ -20,7 +20,7 @@ const SidebarNav: React.FC<Props> = () => {
         <Link href={"/"} key="Home" className="hover:opacity-50">
           home
         </Link>
-        <Link href={"/About"} key="About" className="hover:opacity-50">
+        <Link href={"/about"} key="About" className="hover:opacity-50">
           about
         </Link>
 
