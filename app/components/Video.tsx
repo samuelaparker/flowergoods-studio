@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useRef, useState } from "react";
-import Loading from "../components/shared/LoadingSpinner";
+import Loading from "./shared/LoadingSpinner";
 
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";

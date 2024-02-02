@@ -15,16 +15,12 @@ const SidebarNav: React.FC<Props> = () => {
   };
 
   return (
-    <nav className="block fixed z-40">
-      <div className="font-extralight md:text-2xl text-base -rotate-90 translate-y-[875%] sm:translate-x-[-42%] translate-x-[-43%] sm:w-full w-[480px]">
-        <Link href={"/"} key="Home" className="py-4 mx-4 hover:opacity-50">
+    <nav className="">
+      <div className="font-extralight md:text-2xl text-base flex items-center space-x-4">
+        <Link href={"/"} key="Home" className="hover:opacity-50">
           home
         </Link>
-        <Link
-          href={"/About"}
-          key="About"
-          className="py-8  mx-4  hover:opacity-50"
-        >
+        <Link href={"/About"} key="About" className="hover:opacity-50">
           about
         </Link>
 
@@ -50,7 +46,7 @@ const SidebarNav: React.FC<Props> = () => {
           key="shop-slow"
           rel="noreferrer noopener"
           target="_blank"
-          className="py-8  mx-4 hover:opacity-50"
+          className="hover:opacity-50"
         >
           shop merch
         </Link>
@@ -61,7 +57,7 @@ const SidebarNav: React.FC<Props> = () => {
           key="order flowers"
           rel="noreferrer noopener"
           target="_blank"
-          className="py-8  mx-4 hover:opacity-50"
+          className="hover:opacity-50"
         >
           order flowers
         </Link>
