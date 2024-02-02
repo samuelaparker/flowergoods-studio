@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import brownLogo from "@/public/brown-flowergoods-logo.webp";
 import blueLogo from "@/public/blue-flowergoods-logo.webp";
 
