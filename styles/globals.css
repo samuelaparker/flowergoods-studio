@@ -19,7 +19,6 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: var(--brand-background);
   margin: 0 auto;
   @media (min-width: 1024px) {
     display: flex;

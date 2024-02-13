@@ -37,12 +37,14 @@ export default function RootLayout({
         content="vmz20p53g8bsodl9kle05xneb53j8t"
       />
       <Script />
-      <body className="min-h-[100svh] bg-mobile sm:bg-desktop bg-cover bg-no-repeat text-[#E4E4E4] overflow-hidden ">
-        <div className=" min-h-[100svh] container mx-auto relative pt-4">
-          {children}
-          <div className="absolute bottom-0">
-            <div className="my-8">
-              <Nav />
+      <body className="min-h-[100svh] sm:bg-desktop bg-cover bg-no-repeat text-[#E4E4E4] overflow-hidden relative">
+        <div className="bg-mobile  w-full h-full  bg-[#0080ff] bg-opacity-75">
+          <div className=" min-h-[100svh] container mx-auto relative pt-4">
+            {children}
+            <div className="absolute bottom-0">
+              <div className="my-8 ">
+                <Nav />
+              </div>
             </div>
           </div>
         </div>
