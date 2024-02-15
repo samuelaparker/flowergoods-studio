@@ -21,9 +21,13 @@ module.exports = {
         "brand-orange": "#df8e65",
         "brand-pink": "#ba5a87",
         "brand-purple": "#a359a0",
+        "brand-red": "#FF3132",
       },
       fontFamily: {
         sans: ["var(--font-montserrat)"],
+      },
+      animation: {
+        "spin-slow": "spin 4s linear infinite",
       },
     },
   },
