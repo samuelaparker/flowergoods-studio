@@ -15,19 +15,28 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "brand-green": "#64cd85",
+        "brand-green": "#C0DC80",
         "brand-light-blue": "#4fc8dc",
         "brand-dark-blue": "#3777a8",
         "brand-orange": "#df8e65",
         "brand-pink": "#ba5a87",
-        "brand-purple": "#a359a0",
+        "brand-purple": "rgba(205, 187, 225, 1)",
         "brand-red": "#FF3132",
+        "brand-brown": "#795642",
       },
       fontFamily: {
         sans: ["var(--font-montserrat)"],
+        display: ["var(--font-shrikhand)"],
       },
       animation: {
-        "spin-slow": "spin 4s linear infinite",
+        spin: "spin 2s linear infinite",
+        scale: "scale 2s linear infinite",
+      },
+      keyframes: {
+        scale: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.5)" },
+        },
       },
     },
   },

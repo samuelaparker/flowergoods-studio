@@ -20,10 +20,10 @@
 body {
   color: white;
   margin: 0 auto;
-  @media (min-width: 1024px) {
+  /* @media (min-width: 1024px) {
     display: flex;
     justify-content: center;
-  }
+  } */
   font-family: sans-serif;
 }
 div {

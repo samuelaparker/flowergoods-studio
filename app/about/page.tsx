@@ -24,7 +24,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <div className="h-screen relative">
+    <div className=" relative">
       <div className="mx-auto py-8 pl-20 pr-8 lg:px-8 ">
         <div className="lg:flex lg:flex-row-reverse">
           <div>

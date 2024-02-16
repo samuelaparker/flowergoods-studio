@@ -28,9 +28,9 @@ const SidebarNav: React.FC<Props> = () => {
   }
 
   return (
-    <nav className="px-2 pt-10">
+    <nav className="px-2 pt-10 relative">
       <div className="flex justify-between">
-        <div className="w-12 relative group">
+        <div className="w-12 group absolute left-5 top-5">
           <a
             href={"https://www.instagram.com/flowergoods.studio/"}
             target="_blank"
@@ -43,11 +43,11 @@ const SidebarNav: React.FC<Props> = () => {
               className="hover:scale-125 transition duration-700 ease-in-out"
             />
           </a>
-          <div className="font-thin absolute bottom-8 left-8 w-28 opacity-0 group-hover:opacity-100  duration-700 ease-in-out">
+          <div className="font-thin absolute top-12 left-12 opacity-0 w-28 group-hover:opacity-100  duration-700 ease-in-out">
             follow us on ig
           </div>
         </div>
-        <div className="w-2/5">
+        <div className="w-full">
           <div className="relative group max-w-sm m-auto">
             <Logo />
             <div className="text-2xl font-thin absolute top-[-40px] right-[-150px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out">
@@ -55,7 +55,7 @@ const SidebarNav: React.FC<Props> = () => {
             </div>
           </div>
         </div>
-        <div className=" w-28 h-28  animate-spin-slow [animation-play-state:paused] hover:[animation-play-state:running] ">
+        <div className="absolute top-0 right-4 w-28 h-28  animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
           <Image src={metalFlower} alt="metal flower decoration" />
         </div>
       </div>
@@ -99,7 +99,7 @@ const SidebarNav: React.FC<Props> = () => {
             target="_blank"
             className="hover:text-brand-red transition duration-300 ease-in-out"
           >
-            shop merch
+            merch
           </Link>
         </div>
         <div className="flex flex-col items-center">
