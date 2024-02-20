@@ -23,6 +23,8 @@ module.exports = {
         "brand-purple": "rgba(205, 187, 225, 1)",
         "brand-red": "#FF3132",
         "brand-brown": "#795642",
+        "overlay-blue": "#0080ff",
+        "overlay-brown": "#7A5542",
       },
       fontFamily: {
         sans: ["var(--font-montserrat)"],

@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import blueFlower from "@/public/blue-flower.webp";
 import redFlower from "@/public/red-flower.webp";
@@ -5,7 +6,19 @@ import greenFlower from "@/public/green-flower.webp";
 import purpleFlower from "@/public/purple-flower.webp";
 import brownFlower from "@/public/brown-flower.webp";
 
-//build
+export const metadata: Metadata = {
+  title: "Flowergoods Studio",
+  description: "Flowergoods Studio",
+  verification: {
+    google: "google",
+    yandex: "yandex",
+    yahoo: "yahoo",
+    other: {
+      me: ["my-email", "my-link"],
+    },
+  },
+};
+
 const Home = () => {
   return (
     <>
@@ -33,7 +46,7 @@ const Home = () => {
         </div>
         <div className="container mx-auto flex">
           <div className="m-auto flex flex-col items-center">
-            <div className=" m-auto mt-48 group font-display text-7xl tracking-wide text-center text-brand-green hover:text-brand-purple transition duration-700 ease-in-out">
+            <div className=" m-auto mt-32 group font-display text-7xl tracking-wide text-center text-brand-green hover:text-brand-purple transition duration-700 ease-in-out">
               <div className="">send</div>
               <div className="mt-2">flowers</div>
             </div>

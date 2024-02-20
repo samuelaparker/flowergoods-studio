@@ -1,22 +1,10 @@
-import { Metadata } from "next";
+"use client";
+import { usePathname } from "next/navigation";
 import { Montserrat } from "next/font/google";
 import { Shrikhand } from "next/font/google";
 import Nav from "./components/Nav";
 import Script from "next/script";
 import "../styles/globals.css";
-
-export const metadata: Metadata = {
-  title: "Flowergoods Studio",
-  description: "Flowergoods Studio",
-  verification: {
-    google: "google",
-    yandex: "yandex",
-    yahoo: "yahoo",
-    other: {
-      me: ["my-email", "my-link"],
-    },
-  },
-};
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -38,6 +26,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const currentPathname = usePathname();
+  let background = " w-full min-h-[100svh] bg-overlay-blue bg-opacity-75";
+  if (currentPathname === "/") {
+    background = "w-full min-h-[100svh] bg-overlay-blue bg-opacity-75";
+  } else if (currentPathname === "/about") {
+    background = "w-full min-h-[100svh] bg-overlay-brown bg-opacity-75";
+  }
+
   return (
     <html lang="en" className={`${montserrat.variable} ${shrikhand.variable}`}>
       <meta
@@ -45,8 +41,8 @@ export default function RootLayout({
         content="vmz20p53g8bsodl9kle05xneb53j8t"
       />
       <Script />
-      <body className="min-h-[100svh] sm:bg-desktop bg-cover bg-no-repeat overflow-hidden relative tracking-widest">
-        <div className="bg-mobile  w-full min-h-[100svh]  bg-[#0080ff] bg-opacity-75">
+      <body className="min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest">
+        <div className={background}>
           <Nav />
           {children}
         </div>

@@ -1,113 +1,97 @@
 "use client";
-
-import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Draggable from "react-draggable";
 
-import { BsInstagram } from "react-icons/bs";
+import metalImage from "@/public/metal-image.png";
+import flowerIllustration from "@/public/flower-illustration.webp";
+import trishy from "@/public/flowergoods-studio-making-an-arrangement.png";
 
 const About: React.FC = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  // useEffect(() => {
-  //   document.body.style.backgroundColor = "#F5F5DC";
-  // }, []);
-
-  const subject = "";
-  const body = "";
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    window.location.href = `mailto:hello@flowergoods.studio?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-  };
-
   return (
-    <div className=" relative">
-      <div className="mx-auto py-8 pl-20 pr-8 lg:px-8 ">
-        <div className="lg:flex lg:flex-row-reverse">
-          <div>
-            <h1 className="lg:text-[80px] text-[50px] mb-4 font-extrabold text-right">
-              about
-            </h1>
-
-            <Link
-              href={"https://www.instagram.com/flowergoods.studio/"}
-              target="_blank"
-              rel="noreferrer noopener"
-              key="instagram"
-              className="hover:opacity-50  "
-            >
-              <BsInstagram className="h-10 w-10" />
-            </Link>
+    <>
+      <div className="absolute bottom-[210px] right-[60%] max-w-[600px] z-10 xl:block hidden">
+        <Image src={flowerIllustration} alt="flower illustration" />
+      </div>
+      <div className="container m-auto relative">
+        <div className="m-auto">
+          <div className="flex md:max-w-[1000px] mx-auto md:min-h-[500px] md:flex-row flex-col-reverse">
+            <div className="pr-2 pt-4 md:w-1/2 w-full">
+              <Image
+                src={trishy}
+                alt="flowergoods studio making an arrangement"
+              />
+            </div>
+            <div className="flex flex-col justify-between md:max-w-[50%] w-full">
+              <h1 className="text-2xl font-bold text-center font-display text-brand-green">
+                Founded by Trish Ramirez-Parker
+              </h1>
+              <div className="relative">
+                <div className="hidden md:block ">
+                  <Image src={metalImage} alt="metal image" />
+                </div>
+                <Draggable>
+                  <div
+                    style={{
+                      height: "180px",
+                      width: "120px",
+                      backgroundImage: `url("../../draggable-flower.webp")`,
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      position: "absolute",
+                      left: "0",
+                      top: "0",
+                    }}
+                  ></div>
+                </Draggable>
+              </div>
+              <p className="font-thin text-xl">
+                We believe that flowers should be accessible and enjoyed by all.
+                Flowers are known to stimulate &quot;happy&quot; chemicals like
+                dopamine, oxytocin and serotonin in our brains.
+              </p>
+              <p className="font-thin text-xl">
+                Flowergoods studio is a Richmond, Virginia based studio.
+                We&apos;re all about bringing a touch of beauty +{" "}
+                <span className="text-brand-green font-bold">
+                  happy brain chemicals
+                </span>
+                to your life through florals and goods.
+              </p>
+            </div>
           </div>
 
-          <div className="text-lg lg:mt-32 mt-10 md:mr-10 lg:ml-56">
-            <p>
-              Flowergoods.studio was created by{" "}
-              <span
-                className="hover:underline cursor-pointer"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
-                Trish Ramirez-Parker
-              </span>
-              . in 2023 after switching gears in her career in New York City.
-              With her background in operations and the creative,
-              flowergoods.studio came to be. Flowergoods.studio is now a
-              Richmond, Virginia based studio. We&apos;re all about bringing a
-              touch of beauty + happy brain chemicals to your life through
-              florals and goods
-            </p>
-            {isHovered && (
-              <div className="absolute left-[60%]">
-                <Image
-                  src="/saturday-flowers-14.jpeg"
-                  alt="Saturday Flowers Popup Image"
-                  className="mt-4"
-                  width={396}
-                  height={596}
-                  style={{
-                    objectFit: "contain",
-                    maxWidth: "100%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-            )}
+          <div className="flex flex-col mx-auto pb-24 font-thin text-xl md:max-w-[1000px]">
             <p className="mt-4">
-              Our signature concept,{" "}
-              <span className="font-bold">saturday flowers</span>, is inspired
-              by our personal practice of rest + stillness. Every Saturday, we
-              deliver fresh flowers to your doorstep, so you can enjoy them over
-              a cup of coffee and a pastry.
+              Our signature concept,
+              <span className="text-brand-green font-bold">
+                saturday flowers
+              </span>
+              , is inspired by our personal practice of rest + stillness. Every
+              week, we deliver fresh flowers to your doorstep, so you can enjoy
+              a slow Saturday.
             </p>
             <p className="mt-4">
               We also offer floral arrangements + design for all kinds of
               occasions, from intimate gatherings to floral installs for large
-              events
+              events.
             </p>
             <p className="mt-4">
-              Thanks for stopping by and checking us out. Get
-              <span className="font-bold">
-                <Link
-                  href="#"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  onClick={handleClick}
-                  key="email"
-                  className="hover:opacity-50"
-                >
-                  {" in touch "}
-                </Link>
-              </span>
-              if you&apos;d like to work together.
+              Thanks for stopping by and checking us out. Get{" "}
+              <a
+                href="mailto: hello@flowergoods.studio"
+                className="text-brand-green font-bold"
+              >
+                in touch
+              </a>{" "}
+              if you&apos;d like to work together or send flowers.
             </p>
+            <div className="md:hidden block ">
+              <Image src={metalImage} alt="metal image" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

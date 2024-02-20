@@ -15,8 +15,8 @@ const SidebarNav: React.FC<Props> = () => {
   const body = "";
 
   const currentPathname = usePathname();
-  let home,
-    about = false;
+  let home = false;
+  let about = false;
 
   switch (currentPathname) {
     case "/":
@@ -55,12 +55,12 @@ const SidebarNav: React.FC<Props> = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-0 right-4 w-28 h-28  animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
+        <div className="absolute top-0 right-4 w-28 h-28 md:block hidden  animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
           <Image src={metalFlower} alt="metal flower decoration" />
         </div>
       </div>
       {/* Nav Links */}
-      <div className="md:w-[70%] w-[100%] m-auto flex justify-between md:text-xl text-base font-extralight space-x-4">
+      <div className="relative md:w-[57%] w-[100%] m-auto flex justify-between md:text-xl text-base font-extralight space-x-4 z-20">
         <div className="flex flex-col items-center">
           <Link
             href={"/"}
