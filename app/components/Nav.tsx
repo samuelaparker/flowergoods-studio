@@ -30,7 +30,7 @@ const SidebarNav: React.FC<Props> = () => {
   return (
     <nav className="px-2 md:pt-10 pt-2 relative">
       <div className="flex justify-between">
-        <div className="md:w-12 w-8 group absolute md:left-5 top-6 ">
+        <div className="md:w-12 w-6 group absolute md:left-5 top-6 ">
           <a
             href={"https://www.instagram.com/flowergoods.studio/"}
             target="_blank"
@@ -43,7 +43,7 @@ const SidebarNav: React.FC<Props> = () => {
               className="hover:scale-125 transition duration-700 ease-in-out"
             />
           </a>
-          <div className="font-thin absolute top-12 left-12 opacity-0 w-28 group-hover:opacity-100  duration-700 ease-in-out">
+          <div className="font-thin md:absolute hidden top-12 left-12 opacity-0 w-28 group-hover:opacity-100  duration-700 ease-in-out ">
             follow us on ig
           </div>
         </div>
@@ -89,30 +89,29 @@ const SidebarNav: React.FC<Props> = () => {
             </div>
           )}
         </div>
+
         <div className="flex flex-col items-center">
           <Link
-            href={
-              "https://flowergoodstudio.myshopify.com/collections/shop-slow"
-            }
+            href={"https://flowergoodstudio.myshopify.com/pages/contact"}
             key="shop-slow"
             rel="noreferrer noopener"
             target="_blank"
             className="hover:text-brand-red transition duration-300 ease-in-out"
           >
-            merch
+            inquire
           </Link>
         </div>
         <div className="flex flex-col items-center">
           <Link
             href={
-              "https://flowergoodstudio.myshopify.com/products/saturday-flowers"
+              "https://flowergoodstudio.myshopify.com/collections/shop-slow"
             }
             key="order flowers"
             rel="noreferrer noopener"
             target="_blank"
             className="hover:text-brand-red transition duration-300 ease-in-out"
           >
-            send flowers
+            shop merch
           </Link>
         </div>
       </div>
