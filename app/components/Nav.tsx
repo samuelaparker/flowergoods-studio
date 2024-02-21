@@ -28,9 +28,9 @@ const SidebarNav: React.FC<Props> = () => {
   }
 
   return (
-    <nav className="px-2 pt-10 relative">
+    <nav className="px-2 md:pt-10 pt-2 relative">
       <div className="flex justify-between">
-        <div className="w-12 group absolute left-5 top-5">
+        <div className="md:w-12 w-8 group absolute md:left-5 top-6 ">
           <a
             href={"https://www.instagram.com/flowergoods.studio/"}
             target="_blank"
@@ -47,10 +47,10 @@ const SidebarNav: React.FC<Props> = () => {
             follow us on ig
           </div>
         </div>
-        <div className="w-full">
-          <div className="relative group max-w-sm m-auto">
+        <div className="w-full md:mt-0 mt-4">
+          <div className="relative group md:max-w-sm max-w-[270px] m-auto ">
             <Logo />
-            <div className="text-2xl font-thin absolute top-[-40px] right-[-150px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out">
+            <div className="md:text-2xl text-xl font-thin md:absolute md:top-[-40px] md:right-[-150px] block text-right md:mr-0 mr-[-40px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out">
               a floral design studio
             </div>
           </div>
@@ -60,7 +60,7 @@ const SidebarNav: React.FC<Props> = () => {
         </div>
       </div>
       {/* Nav Links */}
-      <div className="relative md:w-[57%] w-[100%] m-auto flex justify-between md:text-xl text-base font-extralight space-x-4 z-20">
+      <div className="relative md:mt-6 mt-2 md:w-[57%] w-[87%] m-auto flex justify-between md:text-xl text-base font-extralight z-20">
         <div className="flex flex-col items-center">
           <Link
             href={"/"}
@@ -70,7 +70,7 @@ const SidebarNav: React.FC<Props> = () => {
             home
           </Link>
           {home && (
-            <div className="rotate-90 w-10  m-[-25px]">
+            <div className="rotate-90 md:w-10 w-8  m-[-25px]">
               <Image src={squiggle} alt="link underline" />
             </div>
           )}
@@ -84,7 +84,7 @@ const SidebarNav: React.FC<Props> = () => {
             about
           </Link>
           {about && (
-            <div className="rotate-90 w-10  m-[-25px]">
+            <div className="rotate-90 md:w-10 w-8   m-[-25px]">
               <Image src={squiggle} alt="link underline" />
             </div>
           )}

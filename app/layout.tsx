@@ -28,10 +28,16 @@ export default function RootLayout({
 }) {
   const currentPathname = usePathname();
   let background = " w-full min-h-[100svh] bg-overlay-blue bg-opacity-75";
+  let body =
+    "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest overflow-hidden";
   if (currentPathname === "/") {
     background = "w-full min-h-[100svh] bg-overlay-blue bg-opacity-75";
+    body =
+      "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest overflow-hidden";
   } else if (currentPathname === "/about") {
     background = "w-full min-h-[100svh] bg-overlay-brown bg-opacity-75";
+    body =
+      "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest";
   }
 
   return (
@@ -41,7 +47,7 @@ export default function RootLayout({
         content="vmz20p53g8bsodl9kle05xneb53j8t"
       />
       <Script />
-      <body className="min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest">
+      <body className={body}>
         <div className={background}>
           <Nav />
           {children}
