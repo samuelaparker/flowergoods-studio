@@ -49,7 +49,7 @@ const Home = () => {
           <div className="m-auto flex flex-col items-center">
             <div className=" m-auto md:mt-32 group font-display text-7xl tracking-wide text-center text-brand-green hover:text-brand-purple transition duration-700 ease-in-out">
               <Link
-                href="https://flowergoodstudio.myshopify.com/products/saturday-flowers"
+                href="https://flowergoodstudio.myshopify.com/collections/order-flowers"
                 prefetch={true}
               >
                 <div className="">send</div>

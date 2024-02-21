@@ -112,7 +112,7 @@ const SidebarNav: React.FC<Props> = () => {
             target="_blank"
             className="hover:text-brand-red transition duration-300 ease-in-out"
           >
-            order flowers
+            send flowers
           </Link>
         </div>
       </div>
