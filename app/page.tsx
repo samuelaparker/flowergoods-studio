@@ -6,6 +6,7 @@ import redFlower from "@/public/red-flower.webp";
 import greenFlower from "@/public/green-flower.webp";
 import purpleFlower from "@/public/purple-flower.webp";
 import brownFlower from "@/public/brown-flower.webp";
+import metalFlower from "@/public/metal-flower.webp";
 
 export const metadata: Metadata = {
   title: "Flowergoods Studio",
@@ -49,7 +50,7 @@ const Home = () => {
           <div className="m-auto flex flex-col items-center">
             <div className=" m-auto md:mt-32 mt-12 group font-display text-7xl tracking-wide text-center text-brand-green hover:text-brand-purple transition duration-700 ease-in-out">
               <Link
-                href="https://flowergoodstudio.myshopify.com/collections/order-flowers"
+                href="https://flowergoodstudio.myshopify.com/collections/sendflowers"
                 prefetch={true}
               >
                 <div className="">send</div>
@@ -57,7 +58,12 @@ const Home = () => {
               </Link>
             </div>
             <div className="w-12 my-4 hover:animate-scale">
-              <Image src={brownFlower} alt="brown flower decoration" />
+              <div className="sm:block hidden">
+                <Image src={brownFlower} alt="brown flower decoration" />
+              </div>
+              <div className="sm:hidden block w-14 h-14">
+                <Image src={metalFlower} alt="metal flower decoration" />
+              </div>
             </div>
             <div className="text-2xl font-light hover:text-brand-brown transition duration-700 ease-in-out ">
               richmond

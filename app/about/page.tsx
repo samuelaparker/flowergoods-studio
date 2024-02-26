@@ -64,6 +64,7 @@ const About: React.FC = () => {
             <p className="mt-4">
               Our signature concept,
               <span className="text-brand-green font-bold">
+                {" "}
                 saturday flowers
               </span>
               , is inspired by our personal practice of rest + stillness. Every
@@ -78,7 +79,7 @@ const About: React.FC = () => {
             <p className="mt-4">
               Thanks for stopping by and checking us out. Get{" "}
               <Link
-                href="https://flowergoodstudio.myshopify.com/pages/contact"
+                href="https://flowergoodstudio.myshopify.com/pages/inquire"
                 className="text-brand-green font-bold"
               >
                 in touch

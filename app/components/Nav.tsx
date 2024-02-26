@@ -70,7 +70,7 @@ const SidebarNav: React.FC<Props> = () => {
             home
           </Link>
           {home && (
-            <div className="rotate-90 md:w-10 w-8  m-[-25px]">
+            <div className="rotate-90 md:w-10 w-6 md:m-[-25px] m-[-20px]">
               <Image src={squiggle} alt="link underline" />
             </div>
           )}
