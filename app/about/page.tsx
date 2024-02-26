@@ -79,7 +79,7 @@ const About: React.FC = () => {
             <p className="mt-4">
               Thanks for stopping by and checking us out. Get{" "}
               <Link
-                href="https://flowergoodstudio.myshopify.com/pages/inquire"
+                href="https://shop.flowergoods.studio/pages/inquire"
                 className="text-brand-green font-bold"
               >
                 in touch

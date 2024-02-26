@@ -92,7 +92,7 @@ const SidebarNav: React.FC<Props> = () => {
 
         <div className="flex flex-col items-center">
           <Link
-            href={"https://flowergoodstudio.myshopify.com/pages/contact"}
+            href={"https://shop.flowergoods.studio/pages/inquire"}
             key="shop-slow"
             rel="noreferrer noopener"
             target="_blank"
@@ -103,9 +103,7 @@ const SidebarNav: React.FC<Props> = () => {
         </div>
         <div className="flex flex-col items-center">
           <Link
-            href={
-              "https://flowergoodstudio.myshopify.com/collections/shop-slow"
-            }
+            href={"https://shop.flowergoods.studio/collections/shop-slow"}
             key="order flowers"
             rel="noreferrer noopener"
             target="_blank"
