@@ -49,13 +49,10 @@ const Home = () => {
         <div className="container mx-auto flex">
           <div className="m-auto flex flex-col items-center">
             <div className=" m-auto md:mt-32 mt-12 group font-display text-7xl tracking-wide text-center text-brand-green md:hover:text-brand-purple transition duration-700 ease-in-out">
-              <Link
-                href="https://shop.flowergoods.studio/collections/sendflowers"
-                prefetch={true}
-              >
+              <a href="https://shop.flowergoods.studio/collections/sendflowers">
                 <div className="">send</div>
                 <div className="mt-2">flowers</div>
-              </Link>
+              </a>
             </div>
             <div className="w-12 my-4 hover:animate-scale">
               <div className="sm:block hidden">
