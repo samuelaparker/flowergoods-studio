@@ -91,26 +91,26 @@ const SidebarNav: React.FC<Props> = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <Link
+          <a
             href={"https://shop.flowergoods.studio/pages/inquire"}
             key="shop-slow"
-            rel="noreferrer noopener"
+            rel="noreferrer noopener prefetch"
             target="_blank"
             className="hover:text-brand-red transition duration-300 ease-in-out"
           >
             inquire
-          </Link>
+          </a>
         </div>
         <div className="flex flex-col items-center">
-          <Link
+          <a
             href={"https://shop.flowergoods.studio/collections/shop-slow"}
             key="order flowers"
-            rel="noreferrer noopener"
+            rel="noreferrer noopener prefetch"
             target="_blank"
             className="hover:text-brand-red transition duration-300 ease-in-out"
           >
             shop merch
-          </Link>
+          </a>
         </div>
       </div>
     </nav>
