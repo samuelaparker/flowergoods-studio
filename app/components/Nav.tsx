@@ -94,7 +94,7 @@ const SidebarNav: React.FC<Props> = () => {
           <a
             href={"https://shop.flowergoods.studio/pages/inquire"}
             key="shop-slow"
-            rel="noreferrer noopener prefetch"
+            rel="noreferrer noopener"
             target="_blank"
             className="hover:text-brand-red transition duration-300 ease-in-out"
           >
@@ -105,7 +105,7 @@ const SidebarNav: React.FC<Props> = () => {
           <a
             href={"https://shop.flowergoods.studio/collections/shop-slow"}
             key="order flowers"
-            rel="noreferrer noopener prefetch"
+            rel="noreferrer noopener"
             target="_blank"
             className="hover:text-brand-red transition duration-300 ease-in-out"
           >
