@@ -46,12 +46,12 @@ const Home = () => {
         <div className="lg:block hidden items-center w-[30rem] absolute bottom-[-100px] right-0 opacity-0 hover:opacity-100 duration-700 ease-in-out">
           <Image src={oxytocin} alt="oxytocin" />
         </div>
-        <div className="">
+        <div className="mt-8">
           <div className="">
             <div className="m-auto transition duration-700 ease-in-out">
               <a href="https://shop.flowergoods.studio/collections/sendflowers">
                 <div className=" max-w-4xl relative m-auto">
-                  <div className="absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-700 ease-in-out">
+                  <div className="absolute top-0 left-0 opacity-0 md:hover:opacity-100 transition-opacity duration-700 ease-in-out">
                     <Image src={sendFuzzyBlue} alt="send flowers blue" />
                   </div>
                   <div className="top-0 left-0">
@@ -60,7 +60,7 @@ const Home = () => {
                 </div>
               </a>
               <div className="">
-                <div className="m-auto w-28 h-28 animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
+                <div className="m-auto w-24 h-24 animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
                   <Image src={metalFlower} alt="metal flower decoration" />
                 </div>
               </div>
