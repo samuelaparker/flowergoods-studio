@@ -7,6 +7,12 @@ import greenFlower from "@/public/green-flower.webp";
 import purpleFlower from "@/public/purple-flower.webp";
 import brownFlower from "@/public/brown-flower.webp";
 import metalFlower from "@/public/metal-flower.webp";
+import sendFuzzyBlue from "@/public/send-flowers-fuzzy-blue.png";
+import sendFuzzyGreen from "@/public/send-flowers-fuzzy-green.png";
+import flowersStimulate from "@/public/flowers-stimulate.png";
+import dopamine from "@/public/dopamine.png";
+import serotonin from "@/public/serotonin.png";
+import oxytocin from "@/public/oxytocin.png";
 
 export const metadata: Metadata = {
   title: "Flowergoods Studio",
@@ -24,46 +30,40 @@ export const metadata: Metadata = {
 const Home = () => {
   return (
     <>
-      <div className="relative text-2xl font-thin max-w-screen-xl mx-auto my-20">
-        <div className="w-36 absolute left-0 top-0 md:flex hidden items-end opacity-0 hover:opacity-100 duration-700 ease-in-out">
-          <Image src={redFlower} alt="red flower decoration" />
-          <div className="mx-[-20px]">flowers!</div>
+      <div className="relative text-2xl font-thin max-w-screen-2xl mx-auto my-20">
+        <div className="w-96 absolute left-0 top-[-40px] hidden lg:block items-end opacity-0 hover:opacity-100 duration-700 ease-in-out">
+          <Image
+            src={flowersStimulate}
+            alt="flowers stimulate happy brain chemicals"
+          />
         </div>
-        <div className="md:flex hidden items-center w-36 absolute top-0 right-0 opacity-0 hover:opacity-100 duration-700 ease-in-out">
-          <div className="[text-wrap:nowrap] pt-4 mr-[-8px]">
-            special events
-          </div>
-          <Image src={greenFlower} alt="green flower decoration" />
+        <div className="w-80 hidden items-center lg:block absolute top-[-40px] right-0 opacity-0 hover:opacity-100 duration-700 ease-in-out">
+          <Image src={serotonin} alt="serotonin" />
         </div>
-        <div className="w-36 absolute bottom-0 left-0 md:flex hidden items-end opacity-0 hover:opacity-100 duration-700 ease-in-out">
-          <Image src={purpleFlower} alt="purple flower decoration" />
-          <div className="[text-wrap:nowrap]">merch u want to wear!</div>
+        <div className="w-72 absolute bottom-[-40px] left-0 lg:block hidden items-end opacity-0 hover:opacity-100 duration-700 ease-in-out">
+          <Image src={dopamine} alt="dopamine" />
         </div>
-        <div className="md:flex hidden items-center w-52 absolute bottom-0 right-0 opacity-0 hover:opacity-100 duration-700 ease-in-out">
-          <div>
-            <div className="[text-wrap:nowrap] pt-4 mr-[-6px]">coming soon</div>
-            <div className="text-center">*vases*</div>
-          </div>
-          <Image src={blueFlower} alt="blue flower decoration" />
+        <div className="lg:block hidden items-center w-[30rem] absolute bottom-[-100px] right-0 opacity-0 hover:opacity-100 duration-700 ease-in-out">
+          <Image src={oxytocin} alt="oxytocin" />
         </div>
-        <div className="container mx-auto flex">
-          <div className="m-auto flex flex-col items-center">
-            <div className=" m-auto md:mt-32 mt-12 group font-display text-7xl tracking-wide text-center text-brand-green md:hover:text-brand-purple transition duration-700 ease-in-out">
+        <div className="">
+          <div className="">
+            <div className="m-auto transition duration-700 ease-in-out">
               <a href="https://shop.flowergoods.studio/collections/sendflowers">
-                <div className="">send</div>
-                <div className="mt-2">flowers</div>
+                <div className=" max-w-4xl relative m-auto">
+                  <div className="absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-700 ease-in-out">
+                    <Image src={sendFuzzyBlue} alt="send flowers blue" />
+                  </div>
+                  <div className="top-0 left-0">
+                    <Image src={sendFuzzyGreen} alt="send flowers green" />
+                  </div>
+                </div>
               </a>
-            </div>
-            <div className="w-12 my-4 hover:animate-scale">
-              <div className="sm:block hidden">
-                <Image src={brownFlower} alt="brown flower decoration" />
+              <div className="">
+                <div className="m-auto w-28 h-28 animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
+                  <Image src={metalFlower} alt="metal flower decoration" />
+                </div>
               </div>
-              <div className="sm:hidden block w-14 h-14">
-                <Image src={metalFlower} alt="metal flower decoration" />
-              </div>
-            </div>
-            <div className="text-2xl font-light hover:text-brand-brown transition duration-700 ease-in-out ">
-              richmond
             </div>
           </div>
         </div>

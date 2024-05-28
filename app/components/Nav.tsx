@@ -28,7 +28,7 @@ const SidebarNav: React.FC<Props> = () => {
   }
 
   return (
-    <nav className="px-2 md:pt-10 pt-2 relative">
+    <nav className="px-2 md:pt-5 pt-2 relative">
       <div className="flex justify-between">
         <div className="md:w-12 w-6 group absolute md:left-5 top-6 ">
           <a
@@ -47,16 +47,10 @@ const SidebarNav: React.FC<Props> = () => {
             follow us on ig
           </div>
         </div>
-        <div className="w-full md:mt-0 mt-4">
-          <div className="relative group md:max-w-sm max-w-[270px] m-auto ">
+        <div className="w-full md:mt-0 mt-2">
+          <div className="relative group w-1/2 min-w-[270px] m-auto ">
             <Logo />
-            <div className="md:text-2xl text-xl font-thin md:absolute md:top-[-40px] md:right-[-150px] block text-right md:mr-0 mr-[-40px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out">
-              a floral design studio
-            </div>
           </div>
-        </div>
-        <div className="absolute top-0 right-4 w-28 h-28 md:block hidden  animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
-          <Image src={metalFlower} alt="metal flower decoration" />
         </div>
       </div>
       {/* Nav Links */}
