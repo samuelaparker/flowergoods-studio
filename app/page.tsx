@@ -1,4 +1,7 @@
+// "use client";
+
 import { Metadata } from "next";
+import Video from "./components/Video";
 import Link from "next/link";
 import Image from "next/image";
 import blueFlower from "@/public/blue-flower.webp";
@@ -59,10 +62,15 @@ const Home = () => {
                   </div>
                 </div>
               </a>
-              <div className="">
-                <div className="m-auto w-24 h-24 animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
+              <div className="group">
+                <div className="m-auto w-24 h-24 animate-spin [animation-play-state:paused] group-hover:[animation-play-state:running] ">
                   <Image src={metalFlower} alt="metal flower decoration" />
                 </div>
+                {/* <div className="hidden group-hover:flex relative">
+                  <div className="m-auto absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                    TEST!!!!
+                  </div>
+                </div> */}
               </div>
             </div>
           </div>

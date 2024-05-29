@@ -45,17 +45,17 @@ const About: React.FC = () => {
                 </div>
               </div>
               <p className="font-thin text-lg">
-                We believe that flowers should be accessible and enjoyed by all.
-                Flowers are known to stimulate &quot;happy&quot; chemicals like
-                dopamine, oxytocin and serotonin in our brains.
+                We are a Richmond, Virginia based studio and believe flowers
+                should be accessible and enjoyed by all.
               </p>
               <p className="font-thin text-lg">
-                Flowergoods studio is a Richmond, Virginia based studio.
-                We&apos;re all about bringing a touch of beauty +{" "}
+                Flowers are known to stimulate &quot;happy&quot; chemicals like
+                dopamine, oxytocin and serotonin in our brains. We&apos;re all
+                about bringing a touch of beauty +{" "}
                 <span className="text-brand-green font-bold">
                   happy brain chemicals{" "}
                 </span>
-                to your life through florals and goods.
+                to your life through florals and design.
               </p>
             </div>
           </div>
@@ -69,21 +69,19 @@ const About: React.FC = () => {
               </span>
               , is inspired by our personal practice of rest + stillness. Every
               week, we deliver fresh flowers to your doorstep, so you can enjoy
-              a slow Saturday.
+              a slow Saturday. We also offer other services, from custom
+              arrangements to installations, and more.
             </p>
+
             <p className="mt-4">
-              We also offer floral arrangements + design for all kinds of
-              occasions, from intimate gatherings to floral installs for large
-              events.
-            </p>
-            <p className="mt-4">
-              Thanks for stopping by and checking us out. Get{" "}
-              <Link
+              We look forward to bringing a little extra happiness to your life
+              with our flowers and services! Get{" "}
+              <a
                 href="https://shop.flowergoods.studio/pages/inquire"
                 className="text-brand-green font-bold"
               >
                 in touch
-              </Link>{" "}
+              </a>{" "}
               if you&apos;d like to work together or send flowers.
             </p>
             <div className="relative">
