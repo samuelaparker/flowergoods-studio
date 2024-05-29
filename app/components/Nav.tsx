@@ -48,7 +48,7 @@ const SidebarNav: React.FC<Props> = () => {
           </div>
         </div>
         <div className="w-full md:mt-0 mt-2">
-          <div className="relative group w-1/2 min-w-[320px] m-auto">
+          <div className="relative group w-1/2 min-w-[280px] m-auto">
             <Logo />
           </div>
         </div>
