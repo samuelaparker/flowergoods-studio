@@ -1,14 +1,7 @@
 // "use client";
 
 import { Metadata } from "next";
-import Video from "./components/Video";
-import Link from "next/link";
 import Image from "next/image";
-import blueFlower from "@/public/blue-flower.webp";
-import redFlower from "@/public/red-flower.webp";
-import greenFlower from "@/public/green-flower.webp";
-import purpleFlower from "@/public/purple-flower.webp";
-import brownFlower from "@/public/brown-flower.webp";
 import metalFlower from "@/public/metal-flower.webp";
 import sendFuzzyBlue from "@/public/send-flowers-fuzzy-blue.png";
 import sendFuzzyGreen from "@/public/send-flowers-fuzzy-green.png";
