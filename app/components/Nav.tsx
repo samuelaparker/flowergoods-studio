@@ -102,6 +102,17 @@ const SidebarNav: React.FC<Props> = () => {
         </div>
         <div className="flex flex-col items-center">
           <a
+            href={"https://shop.flowergoods.studio/pages/faq"}
+            key="faq"
+            rel="noreferrer noopener"
+            target="_blank"
+            className="hover:text-brand-red transition duration-300 ease-in-out"
+          >
+            faq
+          </a>
+        </div>
+        <div className="flex flex-col items-center">
+          <a
             href={"https://shop.flowergoods.studio/collections/shop-slow"}
             key="order flowers"
             rel="noreferrer noopener"
