@@ -2,7 +2,7 @@
 
 import { Metadata } from "next";
 import Image from "next/image";
-import sendFuzzyMetal from "@/public/metal-send-flowers.webp";
+import sendFlowersMetal from "@/public/metal-send-flowers.webp";
 import flowersStimulate from "@/public/flowers-stimulate.png";
 import dopamine from "@/public/dopamine.png";
 import serotonin from "@/public/serotonin.png";
@@ -44,8 +44,8 @@ const Home = () => {
           <div className="">
             <div className="m-auto transition duration-700 ease-in-out">
               <a href="https://shop.flowergoods.studio/collections/sendflowers">
-                <div className=" max-w-3xl m-auto">
-                  <Image src={sendFuzzyMetal} alt="send flowers blue" />
+                <div className=" md:max-w-3xl w-3/4 m-auto">
+                  <Image src={sendFlowersMetal} alt="send flowers metal" />
                 </div>
               </a>
             </div>
