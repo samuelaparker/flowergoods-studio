@@ -29,6 +29,11 @@ const SidebarNav: React.FC<Props> = () => {
 
   return (
     <nav className="px-2 md:pt-5 pt-2 relative">
+      <div className="absolute md:top-6 md:right-12 top-3 right-8">
+        <div className="m-auto md:w-28 md:h-28 w-12 h-12 animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
+          <Image src={metalFlower} alt="metal flower decoration" />
+        </div>
+      </div>
       <div className="flex justify-between">
         <div className="md:w-12 w-6 group absolute md:left-5 top-6 ">
           <a

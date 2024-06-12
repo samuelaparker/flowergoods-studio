@@ -56,16 +56,6 @@ const Home = () => {
                   </div>
                 </div>
               </a>
-              <div className="group">
-                <div className="m-auto w-24 h-24 animate-spin [animation-play-state:paused] group-hover:[animation-play-state:running] ">
-                  <Image src={metalFlower} alt="metal flower decoration" />
-                </div>
-                <div className="hidden group-hover:flex relative">
-                  <div className="m-auto absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-100%]">
-                    <Image src={hoverGif} alt="gif of bouquets" width={250} />
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
