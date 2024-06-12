@@ -37,7 +37,7 @@ const Home = () => {
         <div className="w-72 absolute bottom-[-40px] left-0 lg:block hidden items-end opacity-0 hover:opacity-100 duration-700 ease-in-out">
           <Image src={dopamine} alt="dopamine" />
         </div>
-        <div className="lg:block hidden items-center w-[30rem] absolute bottom-[-100px] right-0 opacity-0 hover:opacity-100 duration-700 ease-in-out">
+        <div className="lg:block hidden items-center w-[30rem] absolute bottom-[-100px] right-[-60px] opacity-0 hover:opacity-100 duration-700 ease-in-out">
           <Image src={oxytocin} alt="oxytocin" />
         </div>
         <div className="mt-[20svh] md:mt-4">
