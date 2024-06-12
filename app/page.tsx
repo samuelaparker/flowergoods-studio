@@ -2,14 +2,11 @@
 
 import { Metadata } from "next";
 import Image from "next/image";
-import metalFlower from "@/public/metal-flower.webp";
-import sendFuzzyBlue from "@/public/send-flowers-fuzzy-blue.png";
-import sendFuzzyGreen from "@/public/send-flowers-fuzzy-green.png";
+import sendFuzzyMetal from "@/public/metal-send-flowers.webp";
 import flowersStimulate from "@/public/flowers-stimulate.png";
 import dopamine from "@/public/dopamine.png";
 import serotonin from "@/public/serotonin.png";
 import oxytocin from "@/public/oxytocin.png";
-import hoverGif from "@/public/hover-video.gif";
 
 export const metadata: Metadata = {
   title: "Flowergoods Studio",
@@ -43,17 +40,12 @@ const Home = () => {
         <div className="lg:block hidden items-center w-[30rem] absolute bottom-[-100px] right-0 opacity-0 hover:opacity-100 duration-700 ease-in-out">
           <Image src={oxytocin} alt="oxytocin" />
         </div>
-        <div className="mt-[20svh] md:mt-8">
+        <div className="mt-[20svh] md:mt-4">
           <div className="">
             <div className="m-auto transition duration-700 ease-in-out">
               <a href="https://shop.flowergoods.studio/collections/sendflowers">
-                <div className=" max-w-4xl relative m-auto">
-                  <div className="absolute top-0 left-0 opacity-0 md:hover:opacity-100 transition-opacity duration-700 ease-in-out">
-                    <Image src={sendFuzzyBlue} alt="send flowers blue" />
-                  </div>
-                  <div className="top-0 left-0">
-                    <Image src={sendFuzzyGreen} alt="send flowers green" />
-                  </div>
+                <div className=" max-w-3xl m-auto">
+                  <Image src={sendFuzzyMetal} alt="send flowers blue" />
                 </div>
               </a>
             </div>
