@@ -27,9 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const currentPathname = usePathname();
-  let background = " w-full min-h-[100svh] bg-overlay-blue bg-opacity-75";
-  let body =
-    "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest overflow-hidden";
+  let background = "";
+  let body = "";
   if (currentPathname === "/") {
     background =
       "w-full min-h-[100svh] bg-cover bg-no-repeat overflow-hidden bg-overlay-blue bg-opacity-75";
