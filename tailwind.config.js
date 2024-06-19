@@ -25,6 +25,7 @@ module.exports = {
         "brand-brown": "#795642",
         "overlay-blue": "#0080ff",
         "overlay-brown": "#7A5542",
+        "splash-yellow": "#EBF094",
       },
       fontFamily: {
         sans: ["var(--font-montserrat)"],

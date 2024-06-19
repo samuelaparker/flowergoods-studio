@@ -1,6 +1,6 @@
-// "use client";
+"use client";
+// import { Metadata } from "next";
 
-import { Metadata } from "next";
 import Image from "next/image";
 import sendFlowersMetal from "@/public/metal-send-flowers.webp";
 import flowersStimulate from "@/public/flowers-stimulate.png";
@@ -8,18 +8,18 @@ import dopamine from "@/public/dopamine.png";
 import serotonin from "@/public/serotonin.png";
 import oxytocin from "@/public/oxytocin.png";
 
-export const metadata: Metadata = {
-  title: "Flowergoods Studio",
-  description: "Flowergoods Studio",
-  verification: {
-    google: "google",
-    yandex: "yandex",
-    yahoo: "yahoo",
-    other: {
-      me: ["my-email", "my-link"],
-    },
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Flowergoods Studio",
+//   description: "Flowergoods Studio",
+//   verification: {
+//     google: "google",
+//     yandex: "yandex",
+//     yahoo: "yahoo",
+//     other: {
+//       me: ["my-email", "my-link"],
+//     },
+//   },
+// };
 
 const Home = () => {
   return (

@@ -1,3 +1,4 @@
+"use client";
 import React, { FC, useEffect, useRef, useState } from "react";
 
 import Skeleton from "react-loading-skeleton";
@@ -25,7 +26,7 @@ const Video: FC<Props> = ({ src }) => {
   }, []);
 
   return (
-    <div className="">
+    <div>
       <div className="relative pb-9/16">
         {/* {isLoading && (
           <div className="min-h-[300px] flex items-center">
