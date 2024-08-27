@@ -4,7 +4,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Montserrat } from "next/font/google";
 import { Shrikhand } from "next/font/google";
-import greenBubbleFlowerGoods from "@/public/flowergoods-studio-bubble-green.png";
+import silverSaturdayFlowers from "@/public/saturday-flowers-silver.webp";
 import splashLilyPads from "@/public/splash-image-lilypads.webp";
 import Nav from "./components/Nav";
 import Video from "./components/Video";
@@ -71,8 +71,8 @@ export default function RootLayout({
             <div className="relative min-h-screen flex">
               <div className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Image
-                  src={greenBubbleFlowerGoods}
-                  alt="Green Bubble Flowergoods Studio"
+                  src={silverSaturdayFlowers}
+                  alt="Silver Saturday Flowers Logo"
                   width={800}
                 />
               </div>
