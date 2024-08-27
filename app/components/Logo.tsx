@@ -1,11 +1,11 @@
 import { usePathname } from "next/navigation";
 
 import Image from "next/image";
-import brownLogo from "@/public/brown-flowergoods-logo.webp";
-import blueLogo from "@/public/blue-flowergoods-logo.webp";
-import whiteLogo from "@/public/white-flowergoods-logo.webp";
-import bubbleBlue from "@/public/flowergoods-studio-bubble-blue.png";
-import bubbleGreen from "@/public/flowergoods-studio-bubble-green.png";
+import saturdayFlowersYellow from "@/public/saturday-flowers-yellow.png";
+import saturdayFlowersBlue from "@/public/saturday-flowers-blue.png";
+import saturdayFlowersRed from "@/public/saturday-flowers-red.png";
+import saturdayFlowersBrown from "@/public/saturday-flowers-brown.png";
+
 import Link from "next/link";
 
 const Logo: React.FC = () => {
@@ -24,28 +24,30 @@ const Logo: React.FC = () => {
 
   return (
     <Link href="/">
-      <div className="relative group">
+      <div className="relative group flex justify-center">
         {/* First image */}
 
         {home && (
           <>
-            <div className="group-hover:opacity-0 transition-opacity duration-700 ease-in-out">
+            <div>
               <Image
-                src={bubbleGreen}
+                src={saturdayFlowersYellow}
                 alt="First Image"
                 style={{
-                  maxWidth: "100%",
+                  maxWidth: "488px",
+                  width: "100%",
                   height: "auto",
                 }}
               />
             </div>
-            <div className="opacity-0 group-hover:opacity-100 bg-cover absolute top-0 left-0 transition-opacity duration-700 ease-in-out">
+            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-1 transition-opacity duration-700 ease-in-out">
               {/* Second image */}
               <Image
-                src={bubbleBlue}
+                src={saturdayFlowersBlue}
                 alt="Second Image"
                 style={{
-                  maxWidth: "100%",
+                  maxWidth: "488px",
+                  width: "100%",
                   height: "auto",
                 }}
               />
@@ -55,23 +57,25 @@ const Logo: React.FC = () => {
 
         {about && (
           <>
-            <div className="group-hover:opacity-0 transition-opacity duration-700 ease-in-out">
+            <div>
               <Image
-                src={bubbleBlue}
+                src={saturdayFlowersRed}
                 alt="First Image"
                 style={{
-                  maxWidth: "100%",
+                  maxWidth: "488px",
+                  width: "100%",
                   height: "auto",
                 }}
               />
             </div>
-            <div className="opacity-0 group-hover:opacity-100 bg-cover absolute top-0 left-0 transition-opacity duration-700 ease-in-out">
+            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-[-7px] transition-opacity duration-700 ease-in-out">
               {/* Second image */}
               <Image
-                src={bubbleGreen}
+                src={saturdayFlowersBrown}
                 alt="Second Image"
                 style={{
-                  maxWidth: "100%",
+                  maxWidth: "488px",
+                  width: "100%",
                   height: "auto",
                 }}
               />
