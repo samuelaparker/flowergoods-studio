@@ -6,6 +6,8 @@ import Logo from "@/app/components/Logo";
 import Image from "next/image";
 import metalFlower from "@/public/metal-flower.webp";
 import instagram from "@/public/instagram-icon.webp";
+import instagramRed from "@/public/instagram-red.png";
+import instagramPurple from "@/public/instagram-purple.png";
 import squiggle from "@/public/metal-squiggle.webp";
 
 interface Props {}
@@ -35,18 +37,27 @@ const SidebarNav: React.FC<Props> = () => {
         </div>
       </div>
       <div className="flex justify-between">
-        <div className="md:w-12 w-6 group absolute md:left-5 top-6 ">
+        <div className="md:w-20 w-16 group absolute md:left-5 top-4 ">
           <a
             href={"https://www.instagram.com/flowergoods.studio/"}
             target="_blank"
             rel="noreferrer noopener"
             key="instagram"
           >
-            <Image
-              src={instagram}
-              alt="instagram icon"
-              className="hover:scale-125 transition duration-700 ease-in-out"
-            />
+            {home && (
+              <Image
+                src={instagramPurple}
+                alt="instagram icon"
+                className="hover:scale-125 transition duration-700 ease-in-out"
+              />
+            )}
+            {about && (
+              <Image
+                src={instagramRed}
+                alt="instagram icon"
+                className="hover:scale-125 transition duration-700 ease-in-out"
+              />
+            )}
           </a>
           <div className="font-thin md:absolute hidden top-12 left-12 opacity-0 w-28 group-hover:opacity-100  duration-700 ease-in-out ">
             follow us on ig

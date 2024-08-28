@@ -24,7 +24,8 @@ module.exports = {
         "brand-red": "#FF3132",
         "brand-brown": "#795642",
         "overlay-blue": "#0080ff",
-        "overlay-brown": "#7A5542",
+        "overlay-brown": "rgb(122, 85, 66)",
+        "overlay-purple": "rgb(205, 187, 225)",
         "splash-yellow": "#EBF094",
       },
       fontFamily: {
