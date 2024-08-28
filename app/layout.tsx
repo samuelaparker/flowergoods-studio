@@ -38,12 +38,12 @@ export default function RootLayout({
     background =
       "w-full min-h-[100svh] bg-cover bg-no-repeat overflow-hidden bg-overlay-brown bg-opacity-75";
     body =
-      "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest overflow-hidden cursor-fancy";
+      "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest overflow-hidden cursor-fancy font-sans";
   } else if (currentPathname === "/about") {
     background =
       "w-full min-h-[100svh] bg-no-repeat overflow-hidden bg-overlay-purple bg-opacity-75";
     body =
-      "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest  cursor-fancy";
+      "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest  cursor-fancy font-sans leading-3";
   }
 
   const [showSplashPage, setShowSplashPage] = useState(true);

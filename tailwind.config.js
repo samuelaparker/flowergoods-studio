@@ -23,6 +23,7 @@ module.exports = {
         "brand-purple": "rgba(205, 187, 225, 1)",
         "brand-red": "#FF3132",
         "brand-brown": "#795642",
+        "brand-yellow": "rgba(235, 240, 148, 1)",
         "overlay-blue": "#0080ff",
         "overlay-brown": "rgb(122, 85, 66)",
         "overlay-purple": "rgb(205, 187, 225)",
