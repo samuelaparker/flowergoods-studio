@@ -51,7 +51,7 @@ export default function RootLayout({
   useEffect(() => {
     let showSplashPageTimeout: NodeJS.Timeout | number;
 
-    showSplashPageTimeout = setTimeout(() => setShowSplashPage(false), 3000);
+    showSplashPageTimeout = setTimeout(() => setShowSplashPage(false), 5000);
 
     return () => {
       clearTimeout(showSplashPageTimeout);
