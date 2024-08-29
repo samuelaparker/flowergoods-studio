@@ -32,11 +32,9 @@ const SidebarNav: React.FC<Props> = () => {
   let navLinkStyle = "";
 
   if (currentPathname === "/") {
-    navLinkStyle =
-      "relative md:mt-6 mt-6 md:w-[57%] w-[98%] m-auto flex justify-between md:text-xl text-base sm:font-extralight font-normal z-20 text-brand-blue";
+    navLinkStyle = "hover:text-brand-blue transition duration-300 ease-in-out";
   } else if (currentPathname === "/about") {
-    navLinkStyle =
-      "relative md:mt-6 mt-6 md:w-[57%] w-[98%] m-auto flex justify-between md:text-xl text-base sm:font-extralight font-normal z-20";
+    navLinkStyle = "hover:text-brand-red transition duration-300 ease-in-out";
   }
 
   return (
@@ -80,13 +78,9 @@ const SidebarNav: React.FC<Props> = () => {
         </div>
       </div>
       {/* Nav Links */}
-      <div className={navLinkStyle}>
+      <div className="relative md:mt-6 mt-6 md:w-[57%] w-[98%] m-auto flex justify-between md:text-xl text-base sm:font-extralight font-normal z-20">
         <div className="flex flex-col items-center">
-          <Link
-            href={"/"}
-            key="Home"
-            className="hover:text-brand-red transition duration-300 ease-in-out"
-          >
+          <Link href={"/"} key="Home" className={navLinkStyle}>
             home
           </Link>
           {home && (
@@ -96,11 +90,7 @@ const SidebarNav: React.FC<Props> = () => {
           )}
         </div>
         <div className="flex flex-col items-center">
-          <Link
-            href={"/about"}
-            key="About"
-            className="hover:text-brand-red transition duration-300 ease-in-out"
-          >
+          <Link href={"/about"} key="About" className={navLinkStyle}>
             about
           </Link>
           {about && (
@@ -116,7 +106,7 @@ const SidebarNav: React.FC<Props> = () => {
             key="shop-slow"
             rel="noreferrer noopener"
             target="_blank"
-            className="hover:text-brand-red transition duration-300 ease-in-out"
+            className={navLinkStyle}
           >
             inquire
           </a>
@@ -127,7 +117,7 @@ const SidebarNav: React.FC<Props> = () => {
             key="faq"
             rel="noreferrer noopener"
             target="_blank"
-            className="hover:text-brand-red transition duration-300 ease-in-out"
+            className={navLinkStyle}
           >
             faq
           </a>
@@ -138,7 +128,7 @@ const SidebarNav: React.FC<Props> = () => {
             key="order flowers"
             rel="noreferrer noopener"
             target="_blank"
-            className="hover:text-brand-red transition duration-300 ease-in-out"
+            className={navLinkStyle}
           >
             shop merch
           </a>
