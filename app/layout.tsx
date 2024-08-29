@@ -25,8 +25,6 @@ const shrikhand = Shrikhand({
 });
 
 export default function RootLayout({
-  // Layouts must accept a children prop.
-  // This will be populated with nested layouts or pages
   children,
 }: {
   children: React.ReactNode;
@@ -47,14 +45,18 @@ export default function RootLayout({
   }
 
   const [showSplashPage, setShowSplashPage] = useState(true);
+  const [opacity, setOpacity] = useState(1); // Add this state for opacity
 
   useEffect(() => {
-    let showSplashPageTimeout: NodeJS.Timeout | number;
-
-    showSplashPageTimeout = setTimeout(() => setShowSplashPage(false), 5000);
+    const fadeOutTimeout = setTimeout(() => setOpacity(0), 4500); // Start fade-out after 4.5 seconds
+    const removeSplashPageTimeout = setTimeout(
+      () => setShowSplashPage(false),
+      5000
+    ); // Remove splash page after 5 seconds
 
     return () => {
-      clearTimeout(showSplashPageTimeout);
+      clearTimeout(fadeOutTimeout);
+      clearTimeout(removeSplashPageTimeout);
     };
   }, []);
 
@@ -67,20 +69,23 @@ export default function RootLayout({
       <Script />
       <body className={body}>
         {showSplashPage && (
-          <div className="absolute top-0 left-0 z-[999] h-screen w-screen bg-splash-yellow">
+          <div
+            className="absolute top-0 left-0 z-[999] h-screen w-screen bg-splash-yellow transition-opacity ease-in-out duration-700"
+            style={{ opacity }} // Apply the opacity state
+          >
             <div className="relative min-h-screen flex">
-              <div className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:min-w-[60%] min-w-full">
+              <div className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/5 sm:min-w-[40%] min-w-full">
                 <Image
                   src={silverSaturdayFlowers}
                   alt="Silver Saturday Flowers Logo"
                 />
               </div>
-              <div className="w-[50vw] flex justify-center items-center">
+              <div className="w-[60%] flex justify-center items-center">
                 <div className="sm:w-1/2 w-full">
                   <Video src="/splash-video.MOV" />
                 </div>
               </div>
-              <div className="w-[50%]">
+              <div className="w-[48%]">
                 <div className="relative overflow-hidden min-w-full min-h-screen">
                   <Image
                     src={splashLilyPads}
