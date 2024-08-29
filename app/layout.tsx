@@ -69,15 +69,14 @@ export default function RootLayout({
         {showSplashPage && (
           <div className="absolute top-0 left-0 z-[999] h-screen w-screen bg-splash-yellow">
             <div className="relative min-h-screen flex">
-              <div className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:min-w-[60%] min-w-full">
                 <Image
                   src={silverSaturdayFlowers}
                   alt="Silver Saturday Flowers Logo"
-                  width={800}
                 />
               </div>
               <div className="w-[50vw] flex justify-center items-center">
-                <div className="w-[50%]">
+                <div className="sm:w-1/2 w-full">
                   <Video src="/splash-video.MOV" />
                 </div>
               </div>

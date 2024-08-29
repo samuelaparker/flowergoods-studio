@@ -30,14 +30,14 @@ const SidebarNav: React.FC<Props> = () => {
   }
 
   return (
-    <nav className="px-2 md:pt-5 pt-2 relative">
+    <nav className="sm:px-2 md:pt-5 pt-2 relative">
       <div className="absolute md:top-6 md:right-12 top-3 right-0">
         <div className="m-auto md:w-28 md:h-28 w-12 h-12 animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
           <Image src={metalFlower} alt="metal flower decoration" />
         </div>
       </div>
       <div className="flex justify-between">
-        <div className="md:w-20 w-16 group absolute md:left-5 top-4 ">
+        <div className="md:w-20 w-16 group absolute md:left-5 sm:top-4 top-1">
           <a
             href={"https://www.instagram.com/flowergoods.studio/"}
             target="_blank"
@@ -64,13 +64,13 @@ const SidebarNav: React.FC<Props> = () => {
           </div>
         </div>
         <div className="w-full md:mt-0 mt-2">
-          <div className="relative group w-1/2 min-w-[280px] m-auto">
+          <div className="relative group w-1/2 m-auto">
             <Logo />
           </div>
         </div>
       </div>
       {/* Nav Links */}
-      <div className="relative md:mt-6 mt-2 md:w-[57%] w-[87%] m-auto flex justify-between md:text-xl text-base font-extralight z-20">
+      <div className="relative md:mt-6 mt-6 md:w-[57%] w-[98%] m-auto flex justify-between md:text-xl text-base sm:font-extralight font-normal z-20">
         <div className="flex flex-col items-center">
           <Link
             href={"/"}

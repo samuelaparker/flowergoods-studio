@@ -16,7 +16,7 @@ const About: React.FC = () => {
       <div className="container relative m-auto md:mt-12 mt-4 md:px-0 px-2">
         <div className="m-auto">
           <div className="flex md:max-w-[1000px] mx-auto md:flex-row flex-col-reverse">
-            <div className="pr-2 md:w-2/5 w-full">
+            <div className="sm:pr-2 md:w-2/5 w-full sm:mt-0 mt-4">
               <Image
                 src={trishy}
                 alt="flowergoods studio making an arrangement"
