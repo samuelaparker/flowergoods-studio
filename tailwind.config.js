@@ -17,6 +17,7 @@ module.exports = {
       colors: {
         "brand-green": "#C0DC80",
         "brand-light-blue": "#4fc8dc",
+        "brand-blue": "#1893f8",
         "brand-dark-blue": "#3777a8",
         "brand-orange": "#df8e65",
         "brand-pink": "#ba5a87",
@@ -28,6 +29,7 @@ module.exports = {
         "overlay-brown": "rgb(122, 85, 66)",
         "overlay-purple": "rgb(205, 187, 225)",
         "splash-yellow": "#EBF094",
+        "splash-blue": "#98DCFF",
       },
       fontFamily: {
         sans: ["var(--font-montserrat)"],

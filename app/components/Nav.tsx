@@ -29,6 +29,16 @@ const SidebarNav: React.FC<Props> = () => {
       break;
   }
 
+  let navLinkStyle = "";
+
+  if (currentPathname === "/") {
+    navLinkStyle =
+      "relative md:mt-6 mt-6 md:w-[57%] w-[98%] m-auto flex justify-between md:text-xl text-base sm:font-extralight font-normal z-20 text-brand-blue";
+  } else if (currentPathname === "/about") {
+    navLinkStyle =
+      "relative md:mt-6 mt-6 md:w-[57%] w-[98%] m-auto flex justify-between md:text-xl text-base sm:font-extralight font-normal z-20";
+  }
+
   return (
     <nav className="sm:px-2 md:pt-5 pt-2 relative">
       <div className="absolute md:top-6 md:right-12 top-3 right-0">
@@ -70,7 +80,7 @@ const SidebarNav: React.FC<Props> = () => {
         </div>
       </div>
       {/* Nav Links */}
-      <div className="relative md:mt-6 mt-6 md:w-[57%] w-[98%] m-auto flex justify-between md:text-xl text-base sm:font-extralight font-normal z-20">
+      <div className={navLinkStyle}>
         <div className="flex flex-col items-center">
           <Link
             href={"/"}

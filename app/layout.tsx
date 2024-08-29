@@ -70,7 +70,7 @@ export default function RootLayout({
       <body className={body}>
         {showSplashPage && (
           <div
-            className="absolute top-0 left-0 z-[999] h-screen w-screen bg-splash-yellow transition-opacity ease-in-out duration-700"
+            className="absolute top-0 left-0 z-[999] h-screen w-screen bg-splash-blue transition-opacity ease-in-out duration-700"
             style={{ opacity }} // Apply the opacity state
           >
             <div className="relative min-h-screen flex">

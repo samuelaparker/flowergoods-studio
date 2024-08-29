@@ -40,7 +40,7 @@ const Logo: React.FC = () => {
                 }}
               />
             </div>
-            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-1 transition-opacity duration-700 ease-in-out">
+            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-[6px] transition-opacity duration-700 ease-in-out">
               {/* Second image */}
               <Image
                 src={saturdayFlowersBlue}
@@ -68,10 +68,10 @@ const Logo: React.FC = () => {
                 }}
               />
             </div>
-            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-[-7px] transition-opacity duration-700 ease-in-out">
+            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-[-8.5px] transition-opacity duration-700 ease-in-out">
               {/* Second image */}
               <Image
-                src={saturdayFlowersBrown}
+                src={saturdayFlowersYellow}
                 alt="Second Image"
                 style={{
                   maxWidth: "488px",
