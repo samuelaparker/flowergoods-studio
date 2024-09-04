@@ -12,6 +12,7 @@ const Logo: React.FC = () => {
   const currentPathname = usePathname();
   let home = false;
   let about = false;
+  let work = false;
 
   switch (currentPathname) {
     case "/":
@@ -19,6 +20,9 @@ const Logo: React.FC = () => {
       break;
     case "/about":
       about = true;
+      break;
+    case "/work":
+      work = true;
       break;
   }
 
@@ -72,6 +76,33 @@ const Logo: React.FC = () => {
               {/* Second image */}
               <Image
                 src={saturdayFlowersYellow}
+                alt="Second Image"
+                style={{
+                  maxWidth: "488px",
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
+          </>
+        )}
+        {work && (
+          <>
+            <div>
+              <Image
+                src={saturdayFlowersYellow}
+                alt="First Image"
+                style={{
+                  maxWidth: "488px",
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
+            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-[6px] transition-opacity duration-700 ease-in-out">
+              {/* Second image */}
+              <Image
+                src={saturdayFlowersRed}
                 alt="Second Image"
                 style={{
                   maxWidth: "488px",

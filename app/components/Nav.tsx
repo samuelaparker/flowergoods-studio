@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import Logo from "@/app/components/Logo";
 import Image from "next/image";
 import metalFlower from "@/public/metal-flower.webp";
-import instagram from "@/public/instagram-icon.webp";
 import instagramRed from "@/public/instagram-red.png";
 import instagramPurple from "@/public/instagram-purple.png";
 import squiggle from "@/public/metal-squiggle.webp";
@@ -19,6 +18,7 @@ const SidebarNav: React.FC<Props> = () => {
   const currentPathname = usePathname();
   let home = false;
   let about = false;
+  let work = false;
 
   switch (currentPathname) {
     case "/":
@@ -27,13 +27,16 @@ const SidebarNav: React.FC<Props> = () => {
     case "/about":
       about = true;
       break;
+    case "/work":
+      about = true;
+      break;
   }
 
   let navLinkStyle = "";
 
   if (currentPathname === "/") {
     navLinkStyle = "hover:text-brand-blue transition duration-300 ease-in-out";
-  } else if (currentPathname === "/about") {
+  } else if (currentPathname === "/about" || "/work") {
     navLinkStyle = "hover:text-brand-red transition duration-300 ease-in-out";
   }
 
@@ -59,7 +62,7 @@ const SidebarNav: React.FC<Props> = () => {
                 className="hover:scale-125 transition duration-700 ease-in-out"
               />
             )}
-            {about && (
+            {(about || work) && (
               <Image
                 src={instagramRed}
                 alt="instagram icon"

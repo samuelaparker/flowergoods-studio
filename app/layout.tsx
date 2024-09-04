@@ -37,7 +37,7 @@ export default function RootLayout({
       "w-full min-h-[100svh] bg-cover bg-no-repeat overflow-hidden bg-overlay-brown bg-opacity-75";
     body =
       "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest overflow-hidden cursor-fancy font-sans";
-  } else if (currentPathname === "/about") {
+  } else if (currentPathname === "/about" || "/work") {
     background =
       "w-full min-h-[100svh] bg-no-repeat overflow-hidden bg-overlay-purple bg-opacity-75";
     body =
