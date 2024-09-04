@@ -51,7 +51,7 @@ const SidebarNav: React.FC<Props> = () => {
         </div>
       </div>
       <div className="flex justify-between">
-        <div className="md:w-20 w-16 group absolute md:left-5 sm:top-4 top-1">
+        <div className="sm:w-20 w-16 group absolute sm:left-5 sm:top-4 left-2 top-2">
           <a
             href={"https://www.instagram.com/flowergoods.studio/"}
             target="_blank"
@@ -84,7 +84,7 @@ const SidebarNav: React.FC<Props> = () => {
         </div>
       </div>
       {/* Nav Links */}
-      <div className="relative md:mt-6 mt-6 md:w-[57%] w-[98%] m-auto flex justify-between md:text-xl text-base sm:font-extralight font-normal z-20">
+      <div className="relative md:mt-6 mt-6 lg:w-[57%] w-[90%] m-auto flex justify-between md:text-xl text-base font-normal z-20">
         <div className="flex flex-col items-center">
           <Link href={"/"} key="Home" className={navLinkStyle}>
             home
