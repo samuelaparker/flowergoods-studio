@@ -42,9 +42,9 @@ const Home = () => {
         </div>
         <div className="mt-[20svh] md:mt-4">
           <div className="">
-            <div className="m-auto transition duration-700 ease-in-out">
+            <div className="m-auto ">
               <a href="https://shop.flowergoods.studio/collections/sendflowers">
-                <div className=" md:max-w-3xl w-3/4 m-auto">
+                <div className=" md:max-w-3xl w-3/4 m-auto hover:scale-110 scale-1 transition duration-700 ease-in-out">
                   <Image src={sendFlowersMetal} alt="send flowers metal" />
                 </div>
               </a>
