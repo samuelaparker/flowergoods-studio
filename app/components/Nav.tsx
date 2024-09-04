@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Logo from "@/app/components/Logo";
 import Image from "next/image";
 import metalFlower from "@/public/metal-flower.webp";
+import viewWork from "@/public/view-work.png";
 import instagramRed from "@/public/instagram-red.png";
 import instagramPurple from "@/public/instagram-purple.png";
 import squiggle from "@/public/metal-squiggle.webp";
@@ -28,7 +29,7 @@ const SidebarNav: React.FC<Props> = () => {
       about = true;
       break;
     case "/work":
-      about = true;
+      work = true;
       break;
   }
 
@@ -36,15 +37,17 @@ const SidebarNav: React.FC<Props> = () => {
 
   if (currentPathname === "/") {
     navLinkStyle = "hover:text-brand-blue transition duration-300 ease-in-out";
-  } else if (currentPathname === "/about" || "/work") {
+  } else if (currentPathname === "/about") {
     navLinkStyle = "hover:text-brand-red transition duration-300 ease-in-out";
   }
 
   return (
     <nav className="sm:px-2 md:pt-5 pt-2 relative">
       <div className="absolute md:top-6 md:right-12 top-3 right-0">
-        <div className="m-auto md:w-28 md:h-28 w-12 h-12 animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
-          <Image src={metalFlower} alt="metal flower decoration" />
+        <div className="m-auto md:w-28 md:h-28 w-16 h-16 animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
+          <Link href={"/work"}>
+            <Image src={viewWork} alt="metal flower decoration" />
+          </Link>
         </div>
       </div>
       <div className="flex justify-between">
