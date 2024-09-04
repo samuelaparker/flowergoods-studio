@@ -45,6 +45,9 @@ module.exports = {
           "50%": { transform: "scale(1.5)" },
         },
       },
+      cursor: {
+        fancy: "url(/fancy-cursor.png), pointer",
+      },
     },
   },
   plugins: [],
