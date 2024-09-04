@@ -25,12 +25,16 @@ body {
     justify-content: center;
   } */
   font-family: sans-serif;
+  /* @apply cursor-fancy; */
+}
+
+/* a {
   @apply cursor-fancy;
 }
 
-a {
+div {
   @apply cursor-fancy;
-}
+} */
 
 /* div {
   border: red solid 1px;
