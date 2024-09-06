@@ -23,7 +23,7 @@ const About: React.FC = () => {
               />
             </div>
             <div className="flex flex-col items-start md:w-3/5 w-full">
-              <h1 className="md:m-0 m-auto md:max-w-none max-w-[15rem] text-2xl font-bold text-center font-display text-brand-yellow ">
+              <h1 className="m-auto sm:text-2xl text-xl font-bold text-center font-display text-brand-yellow">
                 founded by Trish Ramirez-Parker
               </h1>
               <div className="relative">

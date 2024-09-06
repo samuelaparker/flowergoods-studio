@@ -5,6 +5,7 @@ import saturdayFlowersYellow from "@/public/saturday-flowers-yellow.png";
 import saturdayFlowersBlue from "@/public/saturday-flowers-blue.png";
 import saturdayFlowersRed from "@/public/saturday-flowers-red.png";
 import saturdayFlowersBrown from "@/public/saturday-flowers-brown.png";
+import saturdayFlowersDarkBlue from "@/public/saturday-flowers-dark-blue.png";
 
 import Link from "next/link";
 
@@ -35,7 +36,7 @@ const Logo: React.FC = () => {
           <>
             <div>
               <Image
-                src={saturdayFlowersYellow}
+                src={saturdayFlowersDarkBlue}
                 alt="First Image"
                 style={{
                   maxWidth: "488px",
@@ -44,10 +45,10 @@ const Logo: React.FC = () => {
                 }}
               />
             </div>
-            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-[6px] transition-opacity duration-700 ease-in-out">
+            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute transition-opacity duration-700 ease-in-out">
               {/* Second image */}
               <Image
-                src={saturdayFlowersBlue}
+                src={saturdayFlowersYellow}
                 alt="Second Image"
                 style={{
                   maxWidth: "488px",
@@ -72,7 +73,7 @@ const Logo: React.FC = () => {
                 }}
               />
             </div>
-            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-[-8.5px] transition-opacity duration-700 ease-in-out">
+            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-[-6px] transition-opacity duration-700 ease-in-out">
               {/* Second image */}
               <Image
                 src={saturdayFlowersYellow}
@@ -90,7 +91,7 @@ const Logo: React.FC = () => {
           <>
             <div>
               <Image
-                src={saturdayFlowersYellow}
+                src={saturdayFlowersBlue}
                 alt="First Image"
                 style={{
                   maxWidth: "488px",
@@ -99,10 +100,10 @@ const Logo: React.FC = () => {
                 }}
               />
             </div>
-            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute top-[6px] transition-opacity duration-700 ease-in-out">
+            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute -top-[4px] transition-opacity duration-700 ease-in-out">
               {/* Second image */}
               <Image
-                src={saturdayFlowersRed}
+                src={saturdayFlowersYellow}
                 alt="Second Image"
                 style={{
                   maxWidth: "488px",

@@ -8,6 +8,7 @@ import metalFlower from "@/public/metal-flower.webp";
 import viewWork from "@/public/view-work.png";
 import instagramRed from "@/public/instagram-red.png";
 import instagramPurple from "@/public/instagram-purple.png";
+import instagramBlue from "@/public/instagram-blue.png";
 import squiggle from "@/public/metal-squiggle.webp";
 
 interface Props {}
@@ -60,14 +61,21 @@ const SidebarNav: React.FC<Props> = () => {
           >
             {home && (
               <Image
-                src={instagramPurple}
+                src={instagramBlue}
                 alt="instagram icon"
                 className="hover:scale-125 transition duration-700 ease-in-out"
               />
             )}
-            {(about || work) && (
+            {about && (
               <Image
                 src={instagramRed}
+                alt="instagram icon"
+                className="hover:scale-125 transition duration-700 ease-in-out"
+              />
+            )}
+            {work && (
+              <Image
+                src={instagramPurple}
                 alt="instagram icon"
                 className="hover:scale-125 transition duration-700 ease-in-out"
               />

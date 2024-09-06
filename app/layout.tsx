@@ -34,17 +34,17 @@ export default function RootLayout({
   let body = "";
   if (currentPathname === "/") {
     background =
-      "w-full min-h-[100svh] bg-cover bg-no-repeat overflow-hidden bg-overlay-brown bg-opacity-75";
+      "w-full min-h-[100svh] bg-cover bg-no-repeat overflow-hidden bg-overlay-green bg-opacity-75";
     body =
       "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest overflow-hidden font-sans";
   } else if (currentPathname === "/about") {
     background =
-      "w-full min-h-[100svh] bg-no-repeat overflow-hidden bg-overlay-purple bg-opacity-75";
+      "w-full min-h-[100svh] bg-no-repeat overflow-hidden bg-overlay-blue bg-opacity-75";
     body =
       "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest  font-sans leading-3";
   } else if (currentPathname === "/work") {
     background =
-      "w-full min-h-[100svh] bg-no-repeat overflow-hidden bg-overlay-blue bg-opacity-75";
+      "w-full min-h-[100svh] bg-no-repeat overflow-hidden bg-overlay-brown bg-opacity-75";
     body =
       "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest font-sans leading-3";
   }
