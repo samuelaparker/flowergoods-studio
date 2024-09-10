@@ -60,18 +60,6 @@ const SidebarNav: React.FC<Props> = () => {
     setNavOpen(false);
   };
 
-  const navContainerStyle = `
-    ${navOpen ? "flex " : "hidden"}
-    md:flex flex-col md:flex-row
-    fixed md:relative top-0 left-0 right-0
-    bg-brand-blue md:bg-transparent
-    h-screen md:h-auto
-    items-center justify-center
-    md:mt-6 mt-0 lg:w-[57%] w-full
-    m-auto md:justify-between md:text-xl text-base font-normal
-    z-20
-  `;
-
   return (
     <nav className="sm:px-2 md:pt-5 pt-4 relative">
       <div
@@ -141,7 +129,19 @@ const SidebarNav: React.FC<Props> = () => {
           />
         </button>
       </div>
-      <div className={navContainerStyle}>
+      <div
+        className={`
+          ${navOpen ? "flex " : "hidden"}
+          md:flex flex-col md:flex-row
+          fixed md:relative top-0 left-0 right-0
+          bg-brand-blue md:bg-transparent
+          h-screen md:h-auto
+          items-center justify-center
+          md:mt-6 mt-0 lg:w-[57%] w-full
+          m-auto md:justify-between md:text-xl text-base font-normal
+          z-20
+        `}
+      >
         <div className="flex flex-col items-center w-full space-y-10 md:space-y-0 md:flex-row md:justify-between md:px-12 lg:px-0 mt-8">
           <div className="flex flex-col items-center relative">
             <Link
