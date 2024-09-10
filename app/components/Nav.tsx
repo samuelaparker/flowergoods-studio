@@ -56,8 +56,12 @@ const SidebarNav: React.FC<Props> = () => {
     setNavOpen(!navOpen);
   };
 
+  const closeNavbar = () => {
+    setNavOpen(false);
+  };
+
   const navContainerStyle = `
-    ${navOpen ? "flex" : "hidden"}
+    ${navOpen ? "flex " : "hidden"}
     md:flex flex-col md:flex-row
     fixed md:relative top-0 left-0 right-0
     bg-brand-blue md:bg-transparent
@@ -69,13 +73,17 @@ const SidebarNav: React.FC<Props> = () => {
   `;
 
   return (
-    <nav className="sm:px-2 md:pt-5 pt-2 relative">
+    <nav className="sm:px-2 md:pt-5 pt-4 relative">
       <div
         className={`absolute md:top-6 md:right-12 ${
           navOpen ? "top-24" : "top-[100%]"
         } left-1/2 md:left-auto transform -translate-x-1/2 md:translate-x-0 z-30`}
       >
-        <div className="m-auto md:w-28 md:h-28 w-16 h-16 animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ">
+        <div
+          className={`m-auto w-28 h-28 animate-spin [animation-play-state:paused] hover:[animation-play-state:running] ${
+            navOpen ? "flex md:hidden" : "hidden md:flex"
+          }`}
+        >
           <Link href={"/work"}>
             <Image src={viewWork} alt="metal flower decoration" />
           </Link>
@@ -123,7 +131,7 @@ const SidebarNav: React.FC<Props> = () => {
       </div>
       {/* Nav Links */}
 
-      <div className="flex justify-end md:hidden absolute top-4 right-4 z-30">
+      <div className="flex justify-end md:hidden absolute top-4 right-4 z-30 ">
         <button onClick={toggleNavbar} className="p-2">
           <Image
             src={navOpen ? HamburgetMenuOpen : HamburgetMenuClose}
@@ -134,23 +142,33 @@ const SidebarNav: React.FC<Props> = () => {
         </button>
       </div>
       <div className={navContainerStyle}>
-        <div className="flex flex-col items-center w-full space-y-8 md:space-y-0 md:flex-row md:justify-between">
-          <div className="flex flex-col items-center">
-            <Link href={"/"} key="Home" className={navLinkStyle}>
+        <div className="flex flex-col items-center w-full space-y-10 md:space-y-0 md:flex-row md:justify-between md:px-12 lg:px-0 mt-8">
+          <div className="flex flex-col items-center relative">
+            <Link
+              href={"/"}
+              key="Home"
+              className={navLinkStyle}
+              onClick={closeNavbar}
+            >
               home
             </Link>
             {home && (
-              <div className="rotate-90 md:w-10 w-6 md:m-[-25px] m-[-20px]">
+              <div className="absolute top-3 left-1/2 transform -translate-x-1/2 rotate-90 md:w-10 w-6">
                 <Image src={squiggle} alt="link underline" />
               </div>
             )}
           </div>
-          <div className="flex flex-col items-center">
-            <Link href={"/about"} key="About" className={navLinkStyle}>
+          <div className="flex flex-col items-center relative">
+            <Link
+              href={"/about"}
+              key="About"
+              className={navLinkStyle}
+              onClick={closeNavbar}
+            >
               about
             </Link>
             {about && (
-              <div className="rotate-90 md:w-10 w-8 m-[-25px]">
+              <div className="absolute top-3 left-1/2 transform -translate-x-1/2 rotate-90 md:w-10 w-8">
                 <Image src={squiggle} alt="link underline" />
               </div>
             )}
@@ -162,6 +180,7 @@ const SidebarNav: React.FC<Props> = () => {
               rel="noreferrer noopener"
               target="_blank"
               className={navLinkStyle}
+              onClick={closeNavbar}
             >
               inquire
             </a>
@@ -173,6 +192,7 @@ const SidebarNav: React.FC<Props> = () => {
               rel="noreferrer noopener"
               target="_blank"
               className={navLinkStyle}
+              onClick={closeNavbar}
             >
               faq
             </a>
@@ -184,6 +204,7 @@ const SidebarNav: React.FC<Props> = () => {
               rel="noreferrer noopener"
               target="_blank"
               className={navLinkStyle}
+              onClick={closeNavbar}
             >
               shop merch
             </a>

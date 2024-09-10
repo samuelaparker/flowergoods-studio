@@ -22,8 +22,8 @@ const About: React.FC = () => {
                 alt="flowergoods studio making an arrangement"
               />
             </div>
-            <div className="flex flex-col items-start md:w-3/5 w-full">
-              <h1 className="m-auto sm:text-2xl text-xl font-bold text-center font-display text-brand-yellow">
+            <div className="flex flex-col items-start md:w-3/5 w-full md:mt-0 mt-8">
+              <h1 className="m-auto sm:text-2xl text-xl font-bold text-center font-display text-brand-yellow md:max-w-[unset] max-w-[300px]">
                 founded by Trish Ramirez-Parker
               </h1>
               <div className="relative">
@@ -44,7 +44,7 @@ const About: React.FC = () => {
                   </Draggable>
                 </div>
               </div>
-              <p className="text-lg leading-none font-light">
+              <p className="text-lg leading-none font-light md:mt-0 mt-4">
                 saturday flowers is a Richmond-based floral design studio.
                 Inspired by a personal commitment to stillness and rest,
                 saturday flowers offers weekly Friday delivery so you can fully
