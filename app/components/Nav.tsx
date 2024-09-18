@@ -42,13 +42,13 @@ const SidebarNav: React.FC<Props> = () => {
 
   if (currentPathname === "/") {
     navLinkStyle = `hover:text-brand-blue transition duration-300 ease-in-out
-      ${navOpen ? "md:text-inherit text-gray-800 text-2xl" : ""}`;
+      ${navOpen ? "md:text-inherit text-white text-2xl" : ""}`;
   } else if (currentPathname === "/about") {
     navLinkStyle = `hover:text-brand-red transition duration-300 ease-in-out
-      ${navOpen ? "md:text-inherit text-gray-800 text-2xl" : ""}`;
+      ${navOpen ? "md:text-inherit text-white text-2xl" : ""}`;
   } else {
     navLinkStyle = `transition duration-300 ease-in-out
-      ${navOpen ? "md:text-inherit text-gray-800 text-2xl" : ""}`;
+      ${navOpen ? "md:text-inherit text-white text-2xl" : ""}`;
   }
 
   const toggleNavbar = () => {
@@ -118,7 +118,7 @@ const SidebarNav: React.FC<Props> = () => {
       </div>
       {/* Nav Links */}
 
-      <div className="flex justify-end md:hidden absolute top-4 right-4 z-30 ">
+      <div className="flex justify-end md:hidden absolute top-4 right-4 z-30">
         <button onClick={toggleNavbar} className="p-2">
           <Image
             src={navOpen ? HamburgetMenuOpen : HamburgetMenuClose}
