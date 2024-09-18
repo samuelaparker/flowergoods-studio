@@ -47,7 +47,7 @@ const SidebarNav: React.FC<Props> = () => {
     navLinkStyle = `hover:text-brand-red transition duration-300 ease-in-out
       ${navOpen ? "md:text-inherit text-white text-2xl" : ""}`;
   } else {
-    navLinkStyle = `transition duration-300 ease-in-out
+    navLinkStyle = `hover:text-brand-light-blue transition duration-300 ease-in-out
       ${navOpen ? "md:text-inherit text-white text-2xl" : ""}`;
   }
 
