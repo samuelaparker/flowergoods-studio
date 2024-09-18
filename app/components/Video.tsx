@@ -6,9 +6,10 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 interface Props {
   src: string;
+  loop: boolean;
 }
 
-const Video: FC<Props> = ({ src }) => {
+const Video: FC<Props> = ({ src, loop }) => {
   const [isLoading, setIsLoading] = useState(true);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
@@ -28,16 +29,10 @@ const Video: FC<Props> = ({ src }) => {
   return (
     <div>
       <div className="relative pb-9/16">
-        {/* {isLoading && (
-          <div className="min-h-[300px] flex items-center">
-            <h1 className="">..Loading video</h1>
-          </div>
-        )} */}
         <video
           ref={videoRef}
-          className={isLoading ? "invisible" : ""}
           onLoadedData={handleLoadedData}
-          loop
+          loop={loop}
           autoPlay
           muted
           playsInline

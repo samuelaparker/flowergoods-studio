@@ -75,7 +75,7 @@ export default function RootLayout({
       <body className={body}>
         {showSplashPage && (
           <div
-            className="absolute top-0 left-0 z-[999] h-screen w-screen bg-splash-blue transition-opacity ease-in-out duration-700"
+            className="absolute top-0 left-0 z-[999] h-full w-full bg-splash-blue transition-opacity ease-in-out duration-700"
             style={{ opacity }} // Apply the opacity state
           >
             <div className="relative min-h-screen flex">
@@ -86,8 +86,8 @@ export default function RootLayout({
                 />
               </div>
               <div className="w-[60%] flex justify-center items-center">
-                <div className="sm:w-1/2 w-full">
-                  <Video src="/splash-video.MOV" />
+                <div className="sm:w-1/2 w-2/3 mt-24">
+                  <Video src="/splash-video.MOV" loop={true} />
                 </div>
               </div>
               <div className="w-[48%]">
