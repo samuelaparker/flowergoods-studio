@@ -30,23 +30,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const currentPathname = usePathname();
-  let background = "";
-  let body = "";
+  let backgroundClass = "";
+  let bodyClass =
+    "min-h-screen bg-desktop bg-cover bg-center bg-fixed relative tracking-widest font-sans";
+
   if (currentPathname === "/") {
-    background =
-      "w-full min-h-[100svh] bg-cover bg-no-repeat overflow-hidden bg-overlay-green bg-opacity-75";
-    body =
-      "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest overflow-hidden font-sans";
+    backgroundClass = "bg-overlay-green";
   } else if (currentPathname === "/about") {
-    background =
-      "w-full min-h-[100svh] bg-no-repeat overflow-hidden bg-overlay-blue bg-opacity-75";
-    body =
-      "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest  font-sans leading-3";
+    backgroundClass = "bg-overlay-blue";
   } else if (currentPathname === "/work") {
-    background =
-      "w-full min-h-[100svh] bg-no-repeat overflow-hidden bg-overlay-brown bg-opacity-75";
-    body =
-      "min-h-[100svh] bg-desktop bg-cover bg-no-repeat relative tracking-widest font-sans leading-3";
+    backgroundClass = "bg-overlay-brown";
   }
 
   const [showSplashPage, setShowSplashPage] = useState(true);
@@ -72,7 +65,7 @@ export default function RootLayout({
         content="vmz20p53g8bsodl9kle05xneb53j8t"
       />
       <Script />
-      <body className={body}>
+      <body className={bodyClass}>
         {showSplashPage && (
           <div
             className="absolute top-0 left-0 z-[999] h-full w-full bg-splash-blue transition-opacity ease-in-out duration-700"
@@ -104,7 +97,9 @@ export default function RootLayout({
             </div>
           </div>
         )}
-        <div className={background}>
+        <div
+          className={`w-full min-h-screen bg-cover bg-center bg-fixed overflow-x-hidden ${backgroundClass} bg-opacity-75`}
+        >
           <Nav />
           {children}
         </div>

@@ -14,8 +14,8 @@ const About: React.FC = () => {
         <Image src={flowerIllustration} alt="flower illustration" />
       </div>
       <div className="container relative m-auto md:mt-12 mt-4 md:px-0 px-2">
-        <div className="m-auto">
-          <div className="flex md:max-w-[1000px] mx-auto md:flex-row flex-col-reverse">
+        <div className="m-auto max-w-[1000px]">
+          <div className="flex flex-col-reverse md:flex-row">
             <div className="sm:pr-2 md:w-2/5 w-full sm:mt-0 mt-4">
               <Image
                 src={trishy}
@@ -23,7 +23,7 @@ const About: React.FC = () => {
               />
             </div>
             <div className="flex flex-col items-start md:w-3/5 w-full md:mt-0 mt-8">
-              <h1 className="m-auto sm:text-2xl text-xl font-bold text-center font-display text-brand-yellow md:max-w-[unset] max-w-[300px]">
+              <h1 className="w-full sm:text-2xl text-xl font-bold text-center font-display text-brand-yellow">
                 founded by Trish Ramirez-Parker
               </h1>
               <div className="relative">
@@ -54,7 +54,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex flex-col mx-auto pb-6 text-lg md:max-w-[1000px] leading-none font-light">
+          <div className="flex flex-col mx-auto pb-6 text-lg leading-none font-light">
             <p className="mt-4">
               We specialize in crafting wild, colorful, and textural floral
               arrangements that blend the best of classic and modern styles. Our

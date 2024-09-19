@@ -44,7 +44,7 @@ const Home = () => {
           <div className="">
             <div className="m-auto ">
               <a href="https://shop.saturdayflowers.studio/collections/sendflowers">
-                <div className=" md:max-w-3xl w-3/4 m-auto hover:scale-110 scale-1 transition duration-700 ease-in-out">
+                <div className=" md:max-w-3xl m-auto hover:scale-110 scale-1 transition duration-700 ease-in-out">
                   <Image src={sendFlowersMetal} alt="send flowers metal" />
                 </div>
               </a>
