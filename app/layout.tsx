@@ -100,8 +100,11 @@ export default function RootLayout({
         <div
           className={`w-full min-h-screen bg-cover bg-center bg-fixed overflow-x-hidden ${backgroundClass} bg-opacity-75`}
         >
-          <Nav />
-          {children}
+          <div className="max-w-[1500px] m-auto">
+            <Nav />
+
+            {children}
+          </div>
         </div>
       </body>
     </html>
