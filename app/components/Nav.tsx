@@ -71,7 +71,7 @@ const SidebarNav: React.FC<Props> = () => {
             navOpen ? "flex md:hidden" : "hidden md:flex"
           }`}
         >
-          <Link href={"/work"}>
+          <Link href={"/work"} onClick={closeNavbar}>
             <Image src={viewWork} alt="metal flower decoration" />
           </Link>
         </div>
