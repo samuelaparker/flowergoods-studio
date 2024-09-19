@@ -81,7 +81,7 @@ export default function RootLayout({
                 />
               </div>
               <div className="w-[60%] flex justify-center items-center">
-                <div className="sm:w-1/2 w-2/3 mt-24">
+                <div className="sm:w-1/2 w-2/3 mt-20">
                   <Video src="/splash-video.MOV" loop={true} />
                 </div>
               </div>
