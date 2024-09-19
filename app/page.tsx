@@ -44,6 +44,7 @@ const Home = () => {
           <div className="">
             <div className="m-auto ">
               <a
+                id="sendFlowers"
                 href="https://shop.saturdayflowers.studio/collections/sendflowers"
                 onClick={() =>
                   sendGTMEvent({
