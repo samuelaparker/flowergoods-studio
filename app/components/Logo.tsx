@@ -38,7 +38,6 @@ const Logo: React.FC = () => {
                 src={saturdayFlowersDarkBlue}
                 alt="First Image"
                 style={{
-                  maxWidth: "488px",
                   width: "100%",
                   height: "auto",
                 }}
@@ -50,7 +49,6 @@ const Logo: React.FC = () => {
                 src={saturdayFlowersYellow}
                 alt="Second Image"
                 style={{
-                  maxWidth: "488px",
                   width: "100%",
                   height: "auto",
                 }}
@@ -66,7 +64,6 @@ const Logo: React.FC = () => {
                 src={saturdayFlowersRed}
                 alt="First Image"
                 style={{
-                  maxWidth: "488px",
                   width: "100%",
                   height: "auto",
                 }}
@@ -78,7 +75,6 @@ const Logo: React.FC = () => {
                 src={saturdayFlowersYellow}
                 alt="Second Image"
                 style={{
-                  maxWidth: "488px",
                   width: "100%",
                   height: "auto",
                 }}
@@ -93,7 +89,6 @@ const Logo: React.FC = () => {
                 src={saturdayFlowersBlue}
                 alt="First Image"
                 style={{
-                  maxWidth: "488px",
                   width: "100%",
                   height: "auto",
                 }}
@@ -105,7 +100,6 @@ const Logo: React.FC = () => {
                 src={saturdayFlowersYellow}
                 alt="Second Image"
                 style={{
-                  maxWidth: "488px",
                   width: "100%",
                   height: "auto",
                 }}

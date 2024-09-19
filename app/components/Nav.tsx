@@ -110,8 +110,8 @@ const SidebarNav: React.FC<Props> = () => {
             follow us on ig
           </div>
         </div>
-        <div className="w-full md:mt-0 mt-2">
-          <div className="relative group w-1/2 m-auto">
+        <div className="w-full md:mt-6 mt-3">
+          <div className="relative group w-[60%] sm:w-1/2 m-auto ">
             <Logo />
           </div>
         </div>
