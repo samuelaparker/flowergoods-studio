@@ -60,9 +60,9 @@ const SidebarNav: React.FC<Props> = () => {
   };
 
   return (
-    <nav className="sm:px-2 md:pt-5 pt-4 relative">
+    <nav className="sm:px-2 md:pt-5 pt-4 relative ">
       <div
-        className={`absolute md:top-6 md:right-12 ${
+        className={`absolute md:top-6 md:right-2 ${
           navOpen ? "top-24" : "top-[100%]"
         } left-1/2 md:left-auto transform -translate-x-1/2 md:translate-x-0 z-30`}
       >
@@ -77,57 +77,57 @@ const SidebarNav: React.FC<Props> = () => {
         </div>
       </div>
       <div className="flex justify-between">
-        <div className="sm:w-20 w-16 group absolute sm:left-14 sm:top-8 left-2 top-2">
-          <a
-            href={"https://www.instagram.com/flowergoods.studio/"}
-            target="_blank"
-            rel="noreferrer noopener"
-            key="instagram"
-          >
-            {home && (
-              <Image
-                src={instagramBlue}
-                alt="instagram icon"
-                className="hover:scale-125 transition duration-700 ease-in-out"
-              />
-            )}
-            {about && (
-              <Image
-                src={instagramRed}
-                alt="instagram icon"
-                className="hover:scale-125 transition duration-700 ease-in-out"
-              />
-            )}
-            {work && (
-              <Image
-                src={instagramPurple}
-                alt="instagram icon"
-                className="hover:scale-125 transition duration-700 ease-in-out"
-              />
-            )}
-          </a>
-          <div className="font-thin md:absolute hidden top-12 left-12 opacity-0 w-28 group-hover:opacity-100  duration-700 ease-in-out ">
-            follow us on ig
+        <div className="w-full md:mt-2 mt-3 flex">
+          <div className="sm:w-20 w-16 group">
+            <a
+              href={"https://www.instagram.com/flowergoods.studio/"}
+              target="_blank"
+              rel="noreferrer noopener"
+              key="instagram"
+            >
+              {home && (
+                <Image
+                  src={instagramBlue}
+                  alt="instagram icon"
+                  className="hover:scale-125 transition duration-700 ease-in-out"
+                />
+              )}
+              {about && (
+                <Image
+                  src={instagramRed}
+                  alt="instagram icon"
+                  className="hover:scale-125 transition duration-700 ease-in-out"
+                />
+              )}
+              {work && (
+                <Image
+                  src={instagramPurple}
+                  alt="instagram icon"
+                  className="hover:scale-125 transition duration-700 ease-in-out"
+                />
+              )}
+            </a>
+            <div className="font-thin md:absolute hidden top-12 left-12 opacity-0 w-28 group-hover:opacity-100  duration-700 ease-in-out ">
+              follow us on ig
+            </div>
           </div>
-        </div>
-        <div className="w-full md:mt-6 mt-3">
-          <div className="relative group w-[60%] sm:w-1/2 m-auto ">
+          <div className="relative group w-[60%] m-auto ">
             <Logo />
+          </div>
+          <div className="flex justify-end md:hidden z-30">
+            <button onClick={toggleNavbar} className="p-2">
+              <Image
+                src={navOpen ? HamburgetMenuOpen : HamburgetMenuClose}
+                alt={navOpen ? "Close menu" : "Open menu"}
+                width={30}
+                height={30}
+              />
+            </button>
           </div>
         </div>
       </div>
       {/* Nav Links */}
 
-      <div className="flex justify-end md:hidden absolute top-4 right-4 z-30">
-        <button onClick={toggleNavbar} className="p-2">
-          <Image
-            src={navOpen ? HamburgetMenuOpen : HamburgetMenuClose}
-            alt={navOpen ? "Close menu" : "Open menu"}
-            width={30}
-            height={30}
-          />
-        </button>
-      </div>
       <div
         className={`
           ${navOpen ? "flex " : "hidden"}
