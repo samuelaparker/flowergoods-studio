@@ -47,7 +47,7 @@ const Home = () => {
                 href="https://shop.saturdayflowers.studio/collections/sendflowers"
                 onClick={() =>
                   sendGTMEvent({
-                    event: "sendFlowersClicked",
+                    event: "linkClicked",
                     value: "sendFlowersClicked",
                   })
                 }
