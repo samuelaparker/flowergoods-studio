@@ -78,7 +78,7 @@ const SidebarNav: React.FC<Props> = () => {
       </div>
       <div className="flex justify-between">
         <div className="w-full md:mt-2 flex px-2">
-          <div className="sm:w-20 w-16 group -mt-3">
+          <div className="sm:w-20 w-16 group sm:-mt-4 -mt-3">
             <a
               href={"https://www.instagram.com/flowergoods.studio/"}
               target="_blank"
