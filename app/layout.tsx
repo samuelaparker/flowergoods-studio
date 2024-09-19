@@ -11,6 +11,7 @@ import Video from "./components/Video";
 import Script from "next/script";
 import "../styles/globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -62,6 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${shrikhand.variable}`}>
       <GoogleTagManager gtmId="GTM-WPSLN7X" />
+      <GoogleAnalytics gaId="G-NP8WJ7PRXN" />
       <meta
         name="facebook-domain-verification"
         content="vmz20p53g8bsodl9kle05xneb53j8t"
