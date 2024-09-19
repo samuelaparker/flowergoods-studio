@@ -33,7 +33,7 @@ export default function RootLayout({
   const currentPathname = usePathname();
   let backgroundClass = "";
   let bodyClass =
-    "min-h-screen bg-desktop bg-cover bg-center bg-fixed relative tracking-widest font-sans";
+    "min-h-screen bg-desktop bg-cover bg-fixed relative tracking-widest font-sans";
 
   if (currentPathname === "/") {
     backgroundClass = "bg-overlay-green";
