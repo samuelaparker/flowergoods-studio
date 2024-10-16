@@ -94,7 +94,7 @@ const Logo: React.FC = () => {
                 }}
               />
             </div>
-            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute -top-[4px] transition-opacity duration-700 ease-in-out">
+            <div className="opacity-0 z-10 group-hover:opacity-100 bg-cover absolute transition-opacity duration-700 ease-in-out">
               {/* Second image */}
               <Image
                 src={saturdayFlowersYellow}
