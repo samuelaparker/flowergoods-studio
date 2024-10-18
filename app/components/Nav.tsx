@@ -198,7 +198,7 @@ const SidebarNav: React.FC<Props> = () => {
           </div>
           <div className="flex flex-col items-center">
             <a
-              href={"https://shop.flowergoods.studio/collections/shop-slow"}
+              href={"https://shop.flowergoods.studio/collections/shopslow"}
               key="order flowers"
               rel="noreferrer noopener"
               target="_blank"

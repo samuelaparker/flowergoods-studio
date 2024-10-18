@@ -45,7 +45,7 @@ const Home = () => {
             <div className="m-auto ">
               <a
                 id="sendFlowers"
-                href="https://shop.saturdayflowers.studio/collections/sendflowers"
+                href="https://shop.saturdayflowers.studio/sendflowers"
                 onClick={() =>
                   sendGTMEvent({
                     event: "linkClicked",
