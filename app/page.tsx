@@ -46,6 +46,8 @@ const Home = () => {
               <a
                 id="sendFlowers"
                 href="https://shop.saturdayflowers.studio/sendflowers"
+                rel="noreferrer noopener"
+                target="_blank"
                 onClick={() =>
                   sendGTMEvent({
                     event: "linkClicked",

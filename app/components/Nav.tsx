@@ -178,7 +178,7 @@ const SidebarNav: React.FC<Props> = () => {
           </div>
           <div className="flex flex-col items-center">
             <a
-              href={"https://shop.flowergoods.studio/pages/inquire"}
+              href={"https://www.shop.saturdayflowers.studio/inquire"}
               key="shop-slow"
               rel="noreferrer noopener"
               target="_blank"
@@ -190,7 +190,7 @@ const SidebarNav: React.FC<Props> = () => {
           </div>
           <div className="flex flex-col items-center">
             <a
-              href={"https://shop.flowergoods.studio/pages/faq"}
+              href={"https://www.shop.saturdayflowers.studio/faq"}
               key="faq"
               rel="noreferrer noopener"
               target="_blank"
@@ -202,7 +202,7 @@ const SidebarNav: React.FC<Props> = () => {
           </div>
           <div className="flex flex-col items-center">
             <a
-              href={"https://shop.flowergoods.studio/collections/shopslow"}
+              href={"https://www.shop.saturdayflowers.studio/shopslow"}
               key="order flowers"
               rel="noreferrer noopener"
               target="_blank"

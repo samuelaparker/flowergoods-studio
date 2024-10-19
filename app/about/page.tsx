@@ -69,10 +69,10 @@ const About: React.FC = () => {
               the same.
             </p>
 
-            <p className="mt-4">
+            <p className="mt-4 z-50">
               Take a look around and{" "}
               <a
-                href="https://shop.flowergoods.studio/pages/inquire"
+                href="https://www.shop.saturdayflowers.studio/inquire"
                 className="text-brand-yellow font-bold"
               >
                 get in touch
